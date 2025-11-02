@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import GlowCard from './GlowCard';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface Project {
   id: number;
@@ -10,52 +10,43 @@ interface Project {
   description: string;
   techStack: string[];
   url: string;
+  image: string;
 }
 
 const ProjectsSection: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Project 1",
-      description: "xyz",
-      techStack: ["React", "Node.js", "Express"],
-      url: "#"
+      title: "Virtual Reality Mobility",
+      description: "",
+      techStack: ["Unity", "Meta Oculus", "User Interviews", "HCI"],
+      url: "/project/virtual-reality-mobility",
+      image: "/vr-mobility.png"
     },
     {
       id: 2,
-      title: "Project 2",
-      description: "abc",
-      techStack: ["Vue.js", "Django", "MongoDB"],
-      url: "#"
+      title: "Designing the AfroVerse",
+      description: "",
+      techStack: ["Physical Computing", "Participatory Design", "HCI"],
+      url: "/project/designing-the-afroverse",
+      image: "/afroverse.png"
     },
     {
       id: 3,
-      title: "Project 3",
-      description: "123",
-      techStack: ["Angular", "Flask", "PostgreSQL"],
-      url: "#"
+      title: "SIM-AI",
+      description: "",
+      techStack: ["Python", "Fashion", "React", "PostgreSQL"],
+      url: "/project/sim-ai",
+      image: "/sim-ai.png"
     },
-    {
-      id: 4,
-      title: "Project 4",
-      description: "456",
-      techStack: ["Svelte", "Ruby on Rails", "MySQL"],
-      url: "#"
-    },
-    {
-      id: 5,
-      title: "Project 5",
-      description: "789",
-      techStack: ["Next.js", "Spring Boot", "SQLite"],
-      url: "#"     
-    },
-    {
-      id : 6,
-      title: "Project 6",
-      description: "101",
-      techStack: ["Golang", "ASP.NET", "Firebase"],
-      url: "#"
-    }
+    // {
+    //   id: 4,
+    //   title: "CheckMate",
+    //   description: "",
+    //   techStack: ["Python", "Usability Testing"],
+    //   url: "/project/checkmate",
+    //   image: "/images/checkmate.jpg"
+    // }
   ];
 
   const cardVariants = {
@@ -88,7 +79,7 @@ const ProjectsSection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Featured Projects
+          Projects
         </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -106,10 +97,23 @@ const ProjectsSection: React.FC = () => {
                 className="group h-full"
                 hoverScale={1.03}
               >
-                <div className="p-6 h-full flex flex-col relative z-10">
+                {/* Project Image with Gradient Overlay */}
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  {/* Dark gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black opacity-80"></div>
+                  {/* Pink glow on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-pink-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <div className="p-6 flex flex-col relative z-10">
                   {/* Premium highlight effect on hover */}
-                  <div className="absolute -inset-x-4 -inset-y-4 bg-white/5 rounded-xl opacity-0 group-hover:opacity-100 -z-10 blur-2xl transition-opacity"></div>
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br from-white via-white/20 to-transparent transition-all duration-500"></div>
+                  <div className="absolute -inset-x-4 -inset-y-4 bg-pink-500/5 rounded-xl opacity-0 group-hover:opacity-100 -z-10 blur-2xl transition-opacity"></div>
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br from-pink-500 via-pink-500/20 to-transparent transition-all duration-500"></div>
                   
                   <h3 className="text-2xl font-bold italic mb-3 group-hover:text-white transition-colors">{project.title}</h3>
                   <p className="text-white/70 mb-6 group-hover:text-white/90 transition-colors">{project.description}</p>
@@ -125,14 +129,14 @@ const ProjectsSection: React.FC = () => {
                     ))}
                   </div>
                   
-                  <a 
-                    href={project.url} 
+                  <Link 
+                    to={project.url} 
                     className="inline-flex items-center gap-1 text-sm text-white/70 hover:text-white group-hover:text-white/90 transition-colors relative mt-auto"
                   >
                     <span>View Project</span>
                     <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white/30 group-hover:w-full transition-all duration-300"></span>
-                  </a>
+                  </Link>
                 </div>
               </GlowCard>
             </motion.div>

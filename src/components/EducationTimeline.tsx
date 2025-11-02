@@ -1,39 +1,39 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface Education {
+interface Experience {
   id: number;
   years: string;
-  degree: string;
-  institution: string;
-  grade: string;
+  role: string;
+  company: string;
+  description: string;
 }
 
 const EducationTimeline: React.FC = () => {
-  const educationData: Education[] = [
+  const experienceData: Experience[] = [
     {
       id: 1,
-      years: "202X–202X",
-      degree: "B.Tech, Computer Science",
-      institution: "IIT Dholakpur",
-      grade: "GPA: X/10"
+      years: "August 2025 – Present",
+      role: "Co-founder & Software Developer",
+      company: "SIM-AI",
+      description: "Programming an AI sewing pattern generator for designers in the fashion industry."
     },
     {
       id: 2,
-      years: "202X–202X",
-      degree: "Higher Secondary Education",
-      institution: "XX School",
-      grade: "Percentage: XX%"
+      years: "May 2025 – Present",
+      role: "Virtual Reality Research Intern",
+      company: "Carnegie Mellon University Human Computer Interaction Institute",
+      description: "Developing immersive experiences to design inclusive VR systems for users with mobility disabilities."
     },
     {
       id: 3,
-      years: "201X–202X",
-      degree: "Secondary Education",
-      institution: "Delhi Public School",
-      grade: "CGPA: XX/10"
+      years: "January 2025 – Present",
+      role: "Research Assistant",
+      company: "Designing Technologies for the Underserved (DETOUR) Lab",
+      description: "Co-creating Afrofuturistic technologies through the application of Human-Computer Interaction principles."
     }
   ];
+
 
   return (
     <section className="py-20 px-4">
@@ -45,7 +45,7 @@ const EducationTimeline: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Education
+          Experience
         </motion.h2>
         
         <div className="relative pl-10">
@@ -53,7 +53,7 @@ const EducationTimeline: React.FC = () => {
           <div className="timeline-line"></div>
           
           {/* Timeline items */}
-          {educationData.map((item, index) => (
+          {experienceData.map((item, index) => (
             <motion.div 
               key={item.id}
               className="mb-12 relative"
@@ -69,9 +69,9 @@ const EducationTimeline: React.FC = () => {
               
               <div className="glow-card p-6">
                 <span className="text-white/60 block mb-1">{item.years}</span>
-                <h3 className="text-xl font-bold mb-1">{item.degree}</h3>
-                <p className="text-white/80 mb-1">{item.institution}</p>
-                <p className="text-white/60">{item.grade}</p>
+                <h3 className="text-xl font-bold mb-1">{item.role}</h3>
+                <p className="text-white/80 mb-1">{item.company}</p>
+                <p className="text-white/60">{item.description}</p>
               </div>
             </motion.div>
           ))}

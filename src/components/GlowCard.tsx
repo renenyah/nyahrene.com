@@ -20,16 +20,16 @@ const GlowCard: React.FC<GlowCardProps> = ({
   // Define glow intensity levels
   const glowIntensity = {
     low: {
-      initial: "0 0 10px rgba(255, 255, 255, 0.12), 0 0 20px rgba(255, 255, 255, 0.08)",
-      hover: "0 0 25px rgba(255, 255, 255, 0.2), 0 0 50px rgba(255, 255, 255, 0.15)"
+      initial: "0 0 10px rgba(255, 105, 180, 0.15), 0 0 20px rgba(255, 105, 180, 0.1)",
+      hover: "0 0 25px rgba(255, 105, 180, 0.3), 0 0 50px rgba(255, 105, 180, 0.2)"
     },
     medium: {
-      initial: "0 0 15px rgba(255, 255, 255, 0.15), 0 0 25px rgba(255, 255, 255, 0.1)",
-      hover: "0 0 35px rgba(255, 255, 255, 0.25), 0 0 60px rgba(255, 255, 255, 0.15)"
+      initial: "0 0 15px rgba(255, 105, 180, 0.2), 0 0 25px rgba(255, 105, 180, 0.15)",
+      hover: "0 0 35px rgba(255, 105, 180, 0.4), 0 0 60px rgba(255, 105, 180, 0.25)"
     },
     high: {
-      initial: "0 0 20px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.12)",
-      hover: "0 0 45px rgba(255, 255, 255, 0.3), 0 0 70px rgba(255, 255, 255, 0.2)"
+      initial: "0 0 20px rgba(255, 105, 180, 0.25), 0 0 30px rgba(255, 105, 180, 0.18)",
+      hover: "0 0 45px rgba(255, 105, 180, 0.5), 0 0 70px rgba(255, 105, 180, 0.3)"
     }
   };
 
@@ -47,7 +47,7 @@ const GlowCard: React.FC<GlowCardProps> = ({
       whileHover={{ 
         scale: hoverScale,
         boxShadow: glowIntensity[intensity].hover,
-        borderColor: "rgba(255, 255, 255, 0.4)",
+        borderColor: "rgba(255, 105, 180, 0.5)",
       }}
       style={{
         boxShadow: glowIntensity[intensity].initial

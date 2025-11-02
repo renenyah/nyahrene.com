@@ -1,13 +1,11 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import HeroSection from '@/components/HeroSection';
 import TechMarquee from '@/components/TechMarquee';
 import ProjectsSection from '@/components/ProjectsSection';
 import EducationTimeline from '@/components/EducationTimeline';
-import CompetitiveStats from '@/components/CompetitiveStats';
-import BlogSection from '@/components/BlogSection';
-import ContactSection from '@/components/ContactSection';
+// import ContactSection from '@/components/ContactSection';
 
 const Index: React.FC = () => {
   return (
@@ -69,28 +67,36 @@ const Index: React.FC = () => {
         
         <header className="fixed w-full top-0 z-50 bg-dark/80 backdrop-blur-md border-b border-white/10">
           <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 className="text-xl font-bold italic">John Doe</h1>
+            <h1 className="text-xl font-bold italic">Nyah Rene</h1>
             <nav className="hidden md:block">
               <ul className="flex space-x-8">
                 <li>
                   <a href="#projects" className="hover:text-white transition-colors relative group">
-                    Projects
+                    Home
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white/30 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-white transition-colors relative group">
+                  <a href="/about" className="hover:text-white transition-colors relative group">
+                    About Me
+                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white/30 group-hover:w-full transition-all duration-300"></span>
+                  </a>
+                </li>
+                <li>
+                  {/* <a href="#contact" className="hover:text-white transition-colors relative group">
                     Contact
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white/30 group-hover:w-full transition-all duration-300"></span>
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a 
-                    href="/resume.pdf" 
-                    className="cta-button-premium text-sm px-4 py-1"
-                  >
-                    Resume
-                  </a>
+                <a
+                href="https://drive.google.com/file/d/1wCPaZjSH01iba_ZQGLqPHlPRAt0a5hsq/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button-premium text-sm px-4 py-1"
+              >
+                Resume
+              </a>
                 </li>
               </ul>
             </nav>
@@ -102,15 +108,13 @@ const Index: React.FC = () => {
           <TechMarquee />
           <ProjectsSection />
           <EducationTimeline />
-          <CompetitiveStats />
-          <BlogSection />
-          <ContactSection />
+          {/* <ContactSection /> */}
         </main>
         
         <footer className="py-12 px-4 border-t border-white/10 relative z-10">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-white/60">
-              © {new Date().getFullYear()} John Doe. All rights reserved.
+              © {new Date().getFullYear()} Nyah Rene. All rights reserved.
             </p>
           </div>
         </footer>

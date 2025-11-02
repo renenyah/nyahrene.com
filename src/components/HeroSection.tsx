@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection: React.FC = () => {
   const textVariants = {
@@ -38,34 +38,37 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="absolute -inset-x-10 -inset-y-6 bg-white/5 rounded-3xl blur-3xl -z-10"></span>
-          <motion.span 
-            className="inline-block"
-            initial="hidden"
-            animate="visible"
-            custom={0}
-            variants={textVariants}
-          >
-            Hi, I'm John Doe —
-          </motion.span>{" "}
-          <motion.span 
-            className="inline-block hero-text-gradient"
-            initial="hidden"
-            animate="visible"
-            custom={1}
-            variants={textVariants}
-          >
-            turning ideas into powerful digital products.
-          </motion.span>
+          Hi, I'm Nyah Rene
         </motion.h1>
         
-        <motion.p 
-          className="text-xl md:text-2xl font-light italic text-white/80 mb-10 leading-relaxed max-w-3xl mx-auto"
+        <motion.div 
+          className="text-xl md:text-2xl font-light italic text-white/80 mb-10 leading-relaxed max-w-3xl mx-auto h-[40px]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
         >
-          Building robust solutions with code, design, and caffeine.
-        </motion.p>
+          <TypeAnimation
+            sequence={[
+              'researcher',
+              2000,
+              'designer',
+              2000,
+              'coder',
+              2000,
+              'learner',
+              2000,
+              'problem solver',
+              2000,
+              'UX',
+              2000,
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{ display: 'inline-block' }}
+            repeat={Infinity}
+            cursor={true}
+          />
+        </motion.div>
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}
