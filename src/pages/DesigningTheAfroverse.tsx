@@ -60,7 +60,7 @@ const DesigningTheAfroVerse: React.FC = () => {
             Back to Projects
           </Link>
 
-          {/* Gallery of images - no heading */}
+          {/* Gallery of images - no heading
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {images.map((image, index) => (
               <motion.div
@@ -80,7 +80,7 @@ const DesigningTheAfroVerse: React.FC = () => {
                 )}
               </motion.div>
             ))}
-          </div>
+          </div> */}
 
           {/* TITLE */}
           <motion.div
