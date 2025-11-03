@@ -4,6 +4,9 @@ import GlowCard from './GlowCard';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Helper to get correct image path for GitHub Pages
+const getImagePath = (path: string) => `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.slice(1) : path}`;
+
 interface Project {
   id: number;
   title: string;
@@ -21,7 +24,7 @@ const ProjectsSection: React.FC = () => {
       description: "",
       techStack: ["Unity", "Meta Oculus", "User Interviews", "HCI"],
       url: "/project/virtual-reality-mobility",
-      image: "/vr-mobility.png"
+      image: getImagePath("/vr-mobility.png")
     },
     {
       id: 2,
@@ -29,7 +32,7 @@ const ProjectsSection: React.FC = () => {
       description: "",
       techStack: ["Physical Computing", "Participatory Design", "HCI"],
       url: "/project/designing-the-afroverse",
-      image: "/afroverse.png"
+      image: getImagePath("/afroverse.png")
     },
     {
       id: 3,
@@ -37,7 +40,7 @@ const ProjectsSection: React.FC = () => {
       description: "",
       techStack: ["Python", "Fashion", "React", "PostgreSQL"],
       url: "/project/sim-ai",
-      image: "/sim-ai.png"
+      image: getImagePath("/sim-ai.png")
     },
     // {
     //   id: 4,
