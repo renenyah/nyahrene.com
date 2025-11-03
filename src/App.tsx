@@ -19,8 +19,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <ScrollToTop /> {/* 👈 add this inside the BrowserRouter */}
+      <BrowserRouter basename="/nyahrene.com">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/project/virtual-reality-mobility" element={<VirtualRealityMobility />} />
@@ -28,7 +28,7 @@ const App = () => (
           <Route path="/project/sim-ai" element={<SimAI />} />
           <Route path="/project/checkmate" element={<CheckMate />} />
           <Route path="/about" element={<AboutMe />} />
-          <Route path="*" element={<NotFound />} /> {/* optional: handles unknown routes */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
