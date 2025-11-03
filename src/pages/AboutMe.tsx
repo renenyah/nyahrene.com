@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
 
 // Helper to get correct image path for GitHub Pages
 const getImagePath = (path: string) => `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.slice(1) : path}`;
@@ -36,22 +38,22 @@ const AboutMePage: React.FC = () => {
       
       <header className="fixed w-full top-0 z-50 bg-dark/80 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="/" className="text-xl font-bold italic hover:text-white transition-colors">
+          <Link to="/" className="text-xl font-bold italic hover:text-white transition-colors">
             Nyah Rene
-          </a>
+          </Link>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
               <li>
-                <a href="/#projects" className="hover:text-white transition-colors relative group">
+                <Link to="/" className="hover:text-white transition-colors relative group">
                   Home
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white/30 group-hover:w-full transition-all duration-300"></span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="text-white relative group">
+                <Link to="/about" className="text-white relative group">
                   About Me
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white/30"></span>
-                </a>
+                </Link>
               </li>
               <li>
                 {/* <a href="/#contact" className="hover:text-white transition-colors relative group">
