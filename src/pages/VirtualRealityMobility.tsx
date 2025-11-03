@@ -183,34 +183,9 @@ const VirtualRealityMobility: React.FC = () => {
         </div>
       </header>
 
-      {/* ====================== */}
-      {/* TOP PICTURE GALLERY    */}
-      {/* ====================== */}
-      <section className="pt-24 pb-10 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold italic text-center mb-6 text-white">Gallery</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <img
-              src={getImagePath('VR1.jpg')}
-              alt="Gallery 1"
-              className="w-full h-72 object-cover rounded-xl shadow-md"
-            />
-            <img
-              src={getImagePath('VR2.jpg')}
-              alt="Gallery 2"
-              className="w-full h-72 object-cover rounded-xl shadow-md"
-            />
-            <img
-              src={getImagePath('VR3.jpg')}
-              alt="Gallery 3"
-              className="w-full h-72 object-cover rounded-xl shadow-md"
-            />
-          </div>
-        </div>
-      </section>
-
-      <main className="pb-20 px-4">
+      <main className="pt-24 pb-20 px-4">
         <div className="max-w-4xl mx-auto">
+          {/* Back to Projects - AT TOP */}
           <Link
             to="/#projects"
             className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors"
@@ -219,14 +194,37 @@ const VirtualRealityMobility: React.FC = () => {
             Back to Projects
           </Link>
 
+          {/* Title - BEFORE GALLERY */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="mb-12"
           >
             <h1 className="text-4xl md:text-6xl font-bold italic mb-6">
               Virtual Reality Mobility
             </h1>
+
+          {/* TOP PICTURE GALLERY */}
+          <section className="mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <img
+                src={getImagePath('VR1.jpg')}
+                alt="Gallery 1"
+                className="w-full h-72 object-cover rounded-xl shadow-md"
+              />
+              <img
+                src={getImagePath('VR2.jpg')}
+                alt="Gallery 2"
+                className="w-full h-72 object-cover rounded-xl shadow-md"
+              />
+              <img
+                src={getImagePath('VR3.jpg')}
+                alt="Gallery 3"
+                className="w-full h-72 object-cover rounded-xl shadow-md"
+              />
+            </div>
+          </section>
 
             {/* Video Section */}
             <div className="glow-card p-8 mb-8">
