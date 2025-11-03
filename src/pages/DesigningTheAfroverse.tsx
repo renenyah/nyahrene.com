@@ -54,10 +54,33 @@ const DesigningTheAfroVerse: React.FC = () => {
 
       <main className="pt-24 pb-20 px-4">
         <div className="max-w-4xl mx-auto">
+          {/* Back to Projects - moved to very top */}
           <Link to="/#projects" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Projects
           </Link>
+
+          {/* Gallery of images - no heading */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {images.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="glow-card rounded-xl overflow-hidden border border-white/10 bg-white/5"
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full h-64 object-cover"
+                />
+                {image.caption && (
+                  <p className="p-4 text-white/70 text-sm">{image.caption}</p>
+                )}
+              </motion.div>
+            ))}
+          </div>
 
           {/* TITLE */}
           <motion.div
