@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 
+// Helper to get correct image path for GitHub Pages
+const getImagePath = (path: string) => `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.slice(1) : path}`;
+
 const SimAI: React.FC = () => {
   return (
     <div className="bg-dark min-h-screen text-white">
@@ -61,7 +64,7 @@ const SimAI: React.FC = () => {
             <div className="glow-card p-8 mb-16 rounded-2xl border border-white/10 bg-white/5">
               <div className="rounded-xl overflow-hidden border border-white/10">
                 <img 
-                  src="/M1.png" 
+                  src= {getImagePath("/M1.png")}
                   alt="SIM-AI pattern generation workflow showing VR-guided garment creation"
                   className="w-full h-full object-cover"
                 />
@@ -87,7 +90,7 @@ const SimAI: React.FC = () => {
                 {/* Team member 1 */}
                 <div className="flex items-center gap-4">
                   <img 
-                    src="/ProN.jpg" 
+                    src={getImagePath("/ProN.jpg") }
                     alt="Nyah Rene"
                     className="w-16 h-16 rounded-full object-cover border-2 border-purple-500/30"
                   />
@@ -100,7 +103,7 @@ const SimAI: React.FC = () => {
                 {/* Team member 2 */}
                 <div className="flex items-center gap-4">
                   <img 
-                    src="/ProM.JPEG" 
+                    src={getImagePath("/ProM.JPEG")} 
                     alt="Mariama Barry"
                     className="w-16 h-16 rounded-full object-cover border-2 border-purple-500/30"
                     style={{ objectPosition: '50% 10%' }}
