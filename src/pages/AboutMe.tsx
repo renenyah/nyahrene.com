@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+// Helper to get correct image path for GitHub Pages
+const getImagePath = (path: string) => `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.slice(1) : path}`;
+
 const AboutMePage: React.FC = () => {
   return (
     <motion.div
@@ -91,7 +94,7 @@ const AboutMePage: React.FC = () => {
                 <div className="relative group">
                   <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
                   <img
-                    src="/Pic2.png"
+                    src={getImagePath("/Pic2.png")}
                     alt="Profile"
                     className="relative w-80 h-80 md:w-96 md:h-96 rounded-full object-cover border-2 border-white/20 shadow-2xl"
                     style={{ objectPosition: 'center', transform: 'scale(1.1)' }}
