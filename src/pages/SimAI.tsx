@@ -37,13 +37,13 @@ const SimAI: React.FC = () => {
       <main className="pt-24 pb-0 px-4">
         <div className="max-w-4xl mx-auto">
           {/* Back button */}
-          <a
-            href="/#projects"
+          <Link
+            to ="/#projects"
             className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Projects
-          </a>
+          </Link>
 
           {/* Animated section */}
           <motion.div
