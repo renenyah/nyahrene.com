@@ -3,26 +3,28 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 
+// Helper to get correct image path for GitHub Pages
+const getImagePath = (path: string) => `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.slice(1) : path}`;
 
 const DesigningTheAfroVerse: React.FC = () => {
   const images = [
     {
-      src: '/Embroidery.JPG',
+      src: getImagePath('Embroidery.JPG'),
       alt: 'Workshop session with participants',
       caption: ''
     },
     {
-      src: '/3DPrinter.JPG',
+      src: getImagePath('3DPrinter.JPG'),
       alt: '3D printing demonstration',
       caption: ''
     },
     {
-      src: '/Ardiuno.JPG',
+      src: getImagePath('Ardiuno.JPG'),
       alt: 'Laser cutting designs',
       caption: ''
     },
     {
-      src: '/LaserCutter.JPG',
+      src: getImagePath('LaserCutter.JPG'),
       alt: 'Collaborative design work',
       caption: ''
     }
@@ -88,20 +90,7 @@ const DesigningTheAfroVerse: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="glow-card p-8 mb-8">
-              <h2 className="text-2xl font-bold mb-4">Skills</h2>
-              <div className="flex flex-wrap gap-3">
-                <span className="tech-badge-premium">Interviews</span>
-                <span className="tech-badge-premium">Storyboard</span>
-                <span className="tech-badge-premium">Participatory Design</span>
-                <span className="tech-badge-premium">3D Printing</span>
-                <span className="tech-badge-premium">Usability Testing</span>
-                <span className="tech-badge-premium">Laser Cutting</span>
-                <span className="tech-badge-premium">Embroidery</span>
-                <span className="tech-badge-premium">Sewing</span>
-                <span className="tech-badge-premium">Arduino</span>
-              </div>
-            </div>
+
           {/* CONTENT */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -197,7 +186,7 @@ const DesigningTheAfroVerse: React.FC = () => {
               <h2 className="text-2xl font-bold mb-4">Workshop Planning</h2>
               <div className="relative rounded-xl overflow-hidden border border-white/10">
                 <img 
-                  src="/Schedule.png" 
+                  src={getImagePath('Schedule.png')}
                   alt="Workshop schedule breakdown" 
                   className="w-full h-auto object-contain"
                 />
@@ -209,7 +198,7 @@ const DesigningTheAfroVerse: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="relative rounded-xl overflow-hidden border border-pink-400/30 hover:border-pink-400/60 transition-all duration-300 group">
                   <img 
-                    src="/A1.png" 
+                    src={getImagePath('A1.png')}
                     alt="Afro-futuristic design artifact 1" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -222,7 +211,7 @@ const DesigningTheAfroVerse: React.FC = () => {
                 
                 <div className="relative rounded-xl overflow-hidden border border-pink-400/30 hover:border-pink-400/60 transition-all duration-300 group">
                   <img 
-                    src="/A2.png" 
+                    src={getImagePath('A2.png')}
                     alt="Afro-futuristic design artifact 2" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -235,7 +224,7 @@ const DesigningTheAfroVerse: React.FC = () => {
                 
                 <div className="relative rounded-xl overflow-hidden border border-pink-400/30 hover:border-pink-400/60 transition-all duration-300 group">
                   <img 
-                    src="/A3.png" 
+                    src={getImagePath('A3.png')}
                     alt="Afro-futuristic design artifact 3" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -257,7 +246,21 @@ const DesigningTheAfroVerse: React.FC = () => {
               teach and collaborate with participants, and designing the structure and flow of each workshop session.
               </p>
             </div>
-          
+            
+            <div className="glow-card p-8 mb-8">
+              <h2 className="text-2xl font-bold mb-4">Skills</h2>
+              <div className="flex flex-wrap gap-3">
+                <span className="tech-badge-premium">Interviews</span>
+                <span className="tech-badge-premium">Storyboard</span>
+                <span className="tech-badge-premium">Participatory Design</span>
+                <span className="tech-badge-premium">3D Printing</span>
+                <span className="tech-badge-premium">Usability Testing</span>
+                <span className="tech-badge-premium">Laser Cutting</span>
+                <span className="tech-badge-premium">Embroidery</span>
+                <span className="tech-badge-premium">Sewing</span>
+                <span className="tech-badge-premium">Arduino</span>
+              </div>
+            </div>
 
             <div className="glow-card p-8 mb-8">
                 <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
