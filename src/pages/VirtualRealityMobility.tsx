@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, X } from 'lucide-react';
 
+// Helper to get correct image path for GitHub Pages
+const getImagePath = (path: string) => `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.slice(1) : path}`;
+
 // ===========================
 // STORYBOARD GALLERY SECTION
 // ===========================
@@ -12,10 +15,10 @@ const StoryboardGallery: React.FC = () => {
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
   const images = [
-    '/storyboard1.jpg',
-    '/storyboard2.png',
-    '/storyboard3.jpg',
-    '/storyboard4.jpg',
+    getImagePath('storyboard1.jpg'),
+    getImagePath('storyboard2.png'),
+    getImagePath('storyboard3.jpg'),
+    getImagePath('storyboard4.jpg'),
   ];
 
   const nextImage = () => {
@@ -106,12 +109,12 @@ const StoryboardGallery: React.FC = () => {
 };
 
 // ===========================
-// CODEBOOK SAMPLE SECTION (NEW)
+// CODEBOOK SAMPLE SECTION
 // ===========================
 
 const CodebookSample: React.FC = () => {
   const [zoomed, setZoomed] = useState(false);
-  const codebookImage = '/CodeBook.png'; // 👈 make sure this is in your public folder
+  const codebookImage = getImagePath('CodeBook.png');
 
   return (
     <div className="relative flex justify-center">
@@ -188,17 +191,17 @@ const VirtualRealityMobility: React.FC = () => {
           <h2 className="text-3xl font-bold italic text-center mb-6 text-white">Gallery</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/VR1.jpg"
+              src={getImagePath('VR1.jpg')}
               alt="Gallery 1"
               className="w-full h-72 object-cover rounded-xl shadow-md"
             />
             <img
-              src="/VR2.jpg"
+              src={getImagePath('VR2.jpg')}
               alt="Gallery 2"
               className="w-full h-72 object-cover rounded-xl shadow-md"
             />
             <img
-              src="/VR3.jpg"
+              src={getImagePath('VR3.jpg')}
               alt="Gallery 3"
               className="w-full h-72 object-cover rounded-xl shadow-md"
             />
@@ -231,11 +234,22 @@ const VirtualRealityMobility: React.FC = () => {
                 <video 
                   controls 
                   className="w-full h-full"
-                  poster="/video-thumbnail.jpg"
                 >
-                  <source src="/VRdemo.mp4" type="video/mp4" />
+                  <source src={getImagePath('VRdemo.mp4')} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+              </div>
+            </div>
+            <div className="glow-card p-8 mb-8">
+              <h2 className="text-2xl font-bold mb-4">Skills</h2>
+              <div className="flex flex-wrap gap-3">
+                <span className="tech-badge-premium">Interviews</span>
+                <span className="tech-badge-premium">Storyboard</span>
+                <span className="tech-badge-premium">Virtual Reality</span>
+                <span className="tech-badge-premium">Unity</span>
+                <span className="tech-badge-premium">Usability Testing</span>
+                <span className="tech-badge-premium">Qualitative</span>
+                <span className="tech-badge-premium">Excel</span>
               </div>
             </div>
 
@@ -312,10 +326,10 @@ const VirtualRealityMobility: React.FC = () => {
               <p className="text-white/80 leading-relaxed">
                 My work consisted of programming a virtual environment using Unity paired with the
                 Meta Oculus headset to provide an interactive experience for users in our focus group.
-                I conducted interviews to learn about each participant’s experience with their disability
+                I conducted interviews to learn about each participant's experience with their disability
                 and sketched out a storyboard of a virtual environment of their choosing that they imagined
                 and would like to explore. Participants envisioned experiences and movement that were
-                entirely new to them, didn’t yet exist, or recreated past experiences they wanted to relive.
+                entirely new to them, didn't yet exist, or recreated past experiences they wanted to relive.
                 I also added Mixamo avatar animations and programmed different movement options for people
                 with mobility disabilities, including arm-swinging, hand-pulling, teleportation, and more!
               </p>
@@ -327,24 +341,12 @@ const VirtualRealityMobility: React.FC = () => {
               <StoryboardGallery />
             </div>
 
-            {/* ✅ Updated Codebook Section */}
+            {/* Codebook Section */}
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">Codebook Sample</h2>
               <CodebookSample />
             </div>
 
-            <div className="glow-card p-8 mb-8">
-              <h2 className="text-2xl font-bold mb-4">Skills</h2>
-              <div className="flex flex-wrap gap-3">
-                <span className="tech-badge-premium">Interviews</span>
-                <span className="tech-badge-premium">Storyboard</span>
-                <span className="tech-badge-premium">Virtual Reality</span>
-                <span className="tech-badge-premium">Unity</span>
-                <span className="tech-badge-premium">Usability Testing</span>
-                <span className="tech-badge-premium">Qualitative</span>
-                <span className="tech-badge-premium">Excel</span>
-              </div>
-            </div>
             <div className="glow-card p-8 mb-8">
                 <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
                 <p className="text-white/80 leading-relaxed mb-4">
@@ -355,16 +357,6 @@ const VirtualRealityMobility: React.FC = () => {
                 whereas participants who acquired their disability later in life often preferred to be represented 
                 as able-bodied. Further analysis is ongoing as we continue to uncover additional patterns and insights.
                  </p>
-            </div>
-            <div className="flex gap-4">
-              {/* <a
-                href="https://your-live-demo.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button-premium"
-              >
-                View Live Demo
-              </a> */}
             </div>
           </motion.div>
         </div>
