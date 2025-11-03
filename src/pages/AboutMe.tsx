@@ -63,8 +63,10 @@ const AboutMePage: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="/resume.pdf" 
+                  href={getImagePath("/resume.pdf")} 
                   className="cta-button-premium text-sm px-4 py-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Resume
                 </a>
