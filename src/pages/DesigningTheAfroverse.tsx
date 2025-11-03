@@ -98,6 +98,20 @@ const DesigningTheAfroVerse: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="glow-card p-8 mb-8">
+              <h2 className="text-2xl font-bold mb-4">Skills</h2>
+              <div className="flex flex-wrap gap-3">
+                <span className="tech-badge-premium">Interviews</span>
+                <span className="tech-badge-premium">Storyboard</span>
+                <span className="tech-badge-premium">Participatory Design</span>
+                <span className="tech-badge-premium">3D Printing</span>
+                <span className="tech-badge-premium">Usability Testing</span>
+                <span className="tech-badge-premium">Laser Cutting</span>
+                <span className="tech-badge-premium">Embroidery</span>
+                <span className="tech-badge-premium">Sewing</span>
+                <span className="tech-badge-premium">Arduino</span>
+              </div>
+            </div>
+            <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">Problem Statement</h2>
               <p className="text-white/80 leading-relaxed mb-4">
               Black women face alarmingly low retention rates in computing fields, reflecting broader societal marginalization 
@@ -246,21 +260,7 @@ const DesigningTheAfroVerse: React.FC = () => {
               teach and collaborate with participants, and designing the structure and flow of each workshop session.
               </p>
             </div>
-            
-            <div className="glow-card p-8 mb-8">
-              <h2 className="text-2xl font-bold mb-4">Skills</h2>
-              <div className="flex flex-wrap gap-3">
-                <span className="tech-badge-premium">Interviews</span>
-                <span className="tech-badge-premium">Storyboard</span>
-                <span className="tech-badge-premium">Participatory Design</span>
-                <span className="tech-badge-premium">3D Printing</span>
-                <span className="tech-badge-premium">Usability Testing</span>
-                <span className="tech-badge-premium">Laser Cutting</span>
-                <span className="tech-badge-premium">Embroidery</span>
-                <span className="tech-badge-premium">Sewing</span>
-                <span className="tech-badge-premium">Arduino</span>
-              </div>
-            </div>
+          
 
             <div className="glow-card p-8 mb-8">
                 <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
