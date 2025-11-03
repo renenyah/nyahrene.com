@@ -77,10 +77,10 @@ const Index: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/about" className="hover:text-white transition-colors relative group">
+                  <Link to="/about" className="hover:text-white transition-colors relative group">
                     About Me
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white/30 group-hover:w-full transition-all duration-300"></span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   {/* <a href="#contact" className="hover:text-white transition-colors relative group">
