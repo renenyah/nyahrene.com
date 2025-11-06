@@ -70,7 +70,8 @@ const HeroSection: React.FC = () => {
           />
         </motion.div>
         
-        <motion.div
+        {/* UNCOMMENT THIS IF YOU WANT THERE TO BE A BUTTON THAT SAYS "VIEW PROJECTS" */}
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
@@ -82,7 +83,7 @@ const HeroSection: React.FC = () => {
             <span>View Projects</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
