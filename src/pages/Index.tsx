@@ -90,7 +90,7 @@ const Index: React.FC = () => {
                 </li>
                 <li>
                 <a
-                href="https://drive.google.com/file/d/1wCPaZjSH01iba_ZQGLqPHlPRAt0a5hsq/view?usp=sharing"
+                href="https://drive.google.com/file/d/1gx9wP9gt6lmzboFuEeE7-_LXVWp6qd5Y/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-button-premium text-sm px-4 py-1"
