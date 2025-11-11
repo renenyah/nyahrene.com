@@ -237,6 +237,19 @@ const VirtualRealityMobility: React.FC = () => {
                 positive play experiences.
               </p>
             </div>
+            {/*skills section */}
+            <div className="glow-card p-8 mb-8">
+              <h2 className="text-2xl font-bold mb-4">Skills</h2>
+              <div className="flex flex-wrap gap-3">
+                <span className="tech-badge-premium">Interviews</span>
+                <span className="tech-badge-premium">Storyboard</span>
+                <span className="tech-badge-premium">Virtual Reality</span>
+                <span className="tech-badge-premium">Unity</span>
+                <span className="tech-badge-premium">Usability Testing</span>
+                <span className="tech-badge-premium">Qualitative</span>
+                <span className="tech-badge-premium">Excel</span>
+              </div>
+            </div>
 
             {/* Video Section */}
             <div className="glow-card p-8 mb-8">
@@ -248,18 +261,6 @@ const VirtualRealityMobility: React.FC = () => {
                   <source src={getImagePath('VRdemo.mp4')} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-              </div>
-            </div>
-            <div className="glow-card p-8 mb-8">
-              <h2 className="text-2xl font-bold mb-4">Skills</h2>
-              <div className="flex flex-wrap gap-3">
-                <span className="tech-badge-premium">Interviews</span>
-                <span className="tech-badge-premium">Storyboard</span>
-                <span className="tech-badge-premium">Virtual Reality</span>
-                <span className="tech-badge-premium">Unity</span>
-                <span className="tech-badge-premium">Usability Testing</span>
-                <span className="tech-badge-premium">Qualitative</span>
-                <span className="tech-badge-premium">Excel</span>
               </div>
             </div>
 
