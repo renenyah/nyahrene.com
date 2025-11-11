@@ -69,8 +69,8 @@ const DesigningTheAfroVerse: React.FC = () => {
           >
             <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-4 mb-6">
               <h1 className="text-4xl md:text-6xl font-bold italic">Designing The AfroVerse</h1>
-              <span className="text-white/60 text-lg md:text-xl font-light whitespace-nowrap">
-                January 2025 - Present
+              <span className="text-white/60 text-sm md:text-base font-light whitespace-nowrap">
+                September 2024 - Present
               </span>
             </div>
           </motion.div>
