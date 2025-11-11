@@ -178,7 +178,7 @@ const SimAI: React.FC = () => {
               <h2 className="text-2xl font-bold mb-4">What We've Built So Far</h2>
               <div className="space-y-4 text-white/80">
                 <p className="leading-relaxed">
-                  <strong className="text-white">Working Demo:</strong> We've successfully developed a 
+                  <strong className="text-white">Working Backend Demo:</strong> We've successfully developed a 
                   functional demo using Llama3 that demonstrates the core pattern customization system.
                 </p>
                 <p className="leading-relaxed">

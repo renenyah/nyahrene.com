@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { 
   Users, ClipboardList, Monitor, 
   Search, Brain, Layers, MapPin, 
@@ -25,53 +26,40 @@ const ResearchMarquee: React.FC = () => {
     { name: "Excel", icon: <StickyNote className="w-5 h-5 mr-2" /> },
   ];
 
-  const renderMarqueeItems = (items: Array<{ name: string; icon: React.ReactNode }>) => {
-    return items.map((method, index) => (
-      <span key={index} className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full border border-pink-400/30 text-white font-medium mx-3 whitespace-nowrap">
-        {method.icon}
-        {method.name}
-      </span>
-    ));
-  };
-
   return (
-    <section className="py-20 bg-gray-900/30 relative w-full overflow-hidden">
-      {/* Light effect for research section */}
+    <section className="py-20 relative w-full overflow-hidden">
+      {/* Light effect for skills section */}
       <div className="absolute w-[400px] h-[400px] rounded-full bg-pink-500/10 blur-3xl opacity-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
       
-      {/* Title */}
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 relative z-10 text-center">Skills</h2>
+      <div className="max-w-5xl mx-auto px-4 relative z-10">
+        {/* Title */}
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold italic text-white mb-10 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          Skills ✨
+        </motion.h2>
 
-      {/* Scrolling container */}
-      <div className="relative overflow-hidden">
-        <div className="flex animate-scroll">
-          {/* First set of items */}
-          {renderMarqueeItems(researchMethods)}
-          {/* Duplicate set for seamless loop */}
-          {renderMarqueeItems(researchMethods)}
+        {/* Static grid of skills */}
+        <div className="flex flex-wrap justify-center gap-3">
+          {researchMethods.map((method, index) => (
+            <motion.span 
+              key={index} 
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full border border-pink-400/30 text-white font-medium hover:scale-105 hover:from-pink-500/30 hover:to-purple-500/30 transition-all cursor-default"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+            >
+              {method.icon}
+              {method.name}
+            </motion.span>
+          ))}
         </div>
       </div>
-
-      <style>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-
-        .animate-scroll {
-          animation: scroll 60s linear infinite;
-          display: flex;
-          width: fit-content;
-        }
-
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   );
 };
