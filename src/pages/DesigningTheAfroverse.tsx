@@ -60,36 +60,19 @@ const DesigningTheAfroVerse: React.FC = () => {
             Back to Projects
           </Link>
 
-          {/* Gallery of images - no heading
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {images.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glow-card rounded-xl overflow-hidden border border-white/10 bg-white/5"
-              >
-                <img 
-                  src={image.src} 
-                  alt={image.alt}
-                  className="w-full h-64 object-cover"
-                />
-                {image.caption && (
-                  <p className="p-4 text-white/70 text-sm">{image.caption}</p>
-                )}
-              </motion.div>
-            ))}
-          </div> */}
-
-          {/* TITLE */}
+          {/* TITLE WITH DATE */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <h1 className="text-4xl md:text-6xl font-bold italic mb-6">Designing The AfroVerse</h1>
+            <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-4 mb-6">
+              <h1 className="text-4xl md:text-6xl font-bold italic">Designing The AfroVerse</h1>
+              <span className="text-white/60 text-lg md:text-xl font-light whitespace-nowrap">
+                January 2025 - Present
+              </span>
+            </div>
           </motion.div>
 
         {/* IMAGE GALLERY */}
