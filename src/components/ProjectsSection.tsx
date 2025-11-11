@@ -26,7 +26,7 @@ const ProjectsSection: React.FC = () => {
       techStack: ["Unity", "Meta Oculus", "User Interviews", "HCI"],
       url: "/project/virtual-reality-mobility",
       image: getImagePath("/vr-mobility.png"),
-      location: "Georgia Tech" // Add your location
+      location: "Carnegie Mellon University HCII" // Add your location
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ const ProjectsSection: React.FC = () => {
       techStack: ["Physical Computing", "Participatory Design", "HCI"],
       url: "/project/designing-the-afroverse",
       image: getImagePath("/afroverse.png"),
-      location: "Georgia Tech" // Add your location
+      location: "Emory University" // Add your location
     },
     {
       id: 3,
