@@ -76,6 +76,27 @@ const EducationTimeline: React.FC = () => {
             </motion.div>
           ))}
         </div>
+          {/* Simple Resume Note */}
+          <motion.div
+          className="mt-12 text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <p className="text-white/60 text-sm">
+            Check out my{' '}
+            <a 
+              href="https://drive.google.com/file/d/1gx9wP9gt6lmzboFuEeE7-_LXVWp6qd5Y/view?usp=sharing" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-400 hover:text-pink-300 underline transition-colors"
+            >
+              resume
+            </a>
+            {' '}for more detailed experiences ✨
+          </p>
+        </motion.div>
       </div>
     </section>
   );
