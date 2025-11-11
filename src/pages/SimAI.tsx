@@ -152,6 +152,10 @@ const SimAI: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-white mt-1">→</span>
+                  <span>Develop a working front end to test product functionality with designers and creatives</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-white mt-1">→</span>
                   <span>Integrate Gemini AI for enhanced pattern customization capabilities</span>
                 </li>
                 <li className="flex items-start gap-3">
