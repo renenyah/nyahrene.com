@@ -14,6 +14,7 @@ interface Project {
   techStack: string[];
   url: string;
   image: string;
+  location: string; // Added location property
 }
 
 const ProjectsSection: React.FC = () => {
@@ -24,7 +25,8 @@ const ProjectsSection: React.FC = () => {
       description: "",
       techStack: ["Unity", "Meta Oculus", "User Interviews", "HCI"],
       url: "/project/virtual-reality-mobility",
-      image: getImagePath("/vr-mobility.png")
+      image: getImagePath("/vr-mobility.png"),
+      location: "Georgia Tech" // Add your location
     },
     {
       id: 2,
@@ -32,7 +34,8 @@ const ProjectsSection: React.FC = () => {
       description: "",
       techStack: ["Physical Computing", "Participatory Design", "HCI"],
       url: "/project/designing-the-afroverse",
-      image: getImagePath("/afroverse.png")
+      image: getImagePath("/afroverse.png"),
+      location: "Georgia Tech" // Add your location
     },
     {
       id: 3,
@@ -40,18 +43,9 @@ const ProjectsSection: React.FC = () => {
       description: "",
       techStack: ["Python", "Fashion", "React", "PostgreSQL"],
       url: "/project/sim-ai",
-      image: getImagePath("/sim-ai.png")
-      
+      image: getImagePath("/sim-ai.png"),
+      location: "Entrepreneurial Venture" // Add your location
     },
-    
-    // {
-    //   id: 4,
-    //   title: "CheckMate",
-    //   description: "",
-    //   techStack: ["Python", "Usability Testing"],
-    //   url: "/project/checkmate",
-    //   image: "/images/checkmate.jpg"
-    // }
   ];
 
   const cardVariants = {
@@ -121,6 +115,14 @@ const ProjectsSection: React.FC = () => {
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br from-pink-500 via-pink-500/20 to-transparent transition-all duration-500"></div>
                   
                   <h3 className="text-2xl font-bold italic mb-3 group-hover:text-white transition-colors">{project.title}</h3>
+                  
+                  {/* Location Badge */}
+                  <div className="mb-4">
+                    <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-200 text-sm font-semibold">
+                      {project.location}
+                    </span>
+                  </div>
+                  
                   <p className="text-white/70 mb-6 group-hover:text-white/90 transition-colors">{project.description}</p>
                   
                   <div className="flex flex-wrap gap-2 mb-6 mt-auto">
