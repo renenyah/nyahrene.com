@@ -68,7 +68,7 @@ const DesigningTheAfroVerse: React.FC = () => {
             className="mb-12"
           >
             <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-4 mb-6">
-              <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold italic">Designing The AfroVerse</h1>
+              <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold italic">Designing The AfroVerse</h1>
               <span className="text-white/60 text-sm lg:text-base font-light whitespace-nowrap">
                 September 2024 - Present
               </span>
