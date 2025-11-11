@@ -16,6 +16,13 @@ const HeroSection: React.FC = () => {
     })
   };
 
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-4 py-20 relative overflow-hidden">
       {/* Premium corner light effects */}
@@ -70,20 +77,19 @@ const HeroSection: React.FC = () => {
           />
         </motion.div>
         
-        {/* UNCOMMENT THIS IF YOU WANT THERE TO BE A BUTTON THAT SAYS "VIEW PROJECTS" */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
         >
-          <a 
-            href="#projects" 
+          <button 
+            onClick={scrollToProjects}
             className="cta-button-premium group inline-flex items-center gap-2"
           >
             <span>View Projects</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </motion.div> */}
+          </button>
+        </motion.div>
       </div>
     </section>
   );
