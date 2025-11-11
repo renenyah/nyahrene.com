@@ -41,7 +41,9 @@ const ProjectsSection: React.FC = () => {
       techStack: ["Python", "Fashion", "React", "PostgreSQL"],
       url: "/project/sim-ai",
       image: getImagePath("/sim-ai.png")
+      
     },
+    
     // {
     //   id: 4,
     //   title: "CheckMate",

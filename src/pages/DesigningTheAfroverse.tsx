@@ -113,7 +113,26 @@ const DesigningTheAfroVerse: React.FC = () => {
             ))}
           </div>
         </div>
+        <div className="glow-card p-8 mb-8">
+              <h2 className="text-2xl font-bold mb-4">Motivation</h2>
+              <p className="text-white/80 leading-relaxed">
+              Research shows that reconfiguring makerspaces can encourage greater participation from women, positioning 
+              these spaces as stepping stones for broader inclusion in innovation. This study uses participatory design to collaborate
+              with Black women, regardless of their technical experience, see themselves in technology by engaging them in design 
+              activities that are personally or culturally relevant to them. As a researcher and participant, I am both learning from 
+              and contributing to this work by bringing my own experiences as a Black woman. Speculative design workshops using 
+              technology can help Black women build their computing experience, stimulate interest, and foster creativity. 
+              These workshops can also empower them to overcome hesitations about complex skills and solidify their influence in 
+              the field.
+              </p>
 
+              <p className="text-white/80 leading-relaxed mt-4">
+              By leveraging frameworks rooted in Black Feminist epistemologies, afrofuturism and intersectionality, we will 
+              empower Black women to tap into their lived experiences to create, design and prototype utopias using technical 
+              tools. Allowing Black women to frame their own narratives and equipping them to become contributors of the 
+              technical landscape, challenges existing narratives of what the future and computing should look like.
+              </p>
+            </div>
           {/* CONTENT */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -142,27 +161,7 @@ const DesigningTheAfroVerse: React.FC = () => {
               exposure to technology, and narrow perceptions of computing careers. 
               </p>
             </div>
-            
-            <div className="glow-card p-8 mb-8">
-              <h2 className="text-2xl font-bold mb-4">Motivation</h2>
-              <p className="text-white/80 leading-relaxed">
-              Research shows that reconfiguring makerspaces can encourage greater participation from women, positioning 
-              these spaces as stepping stones for broader inclusion in innovation. This study uses participatory design to collaborate
-              with Black women, regardless of their technical experience, see themselves in technology by engaging them in design 
-              activities that are personally or culturally relevant to them. As a researcher and participant, I am both learning from 
-              and contributing to this work by bringing my own experiences as a Black woman. Speculative design workshops using 
-              technology can help Black women build their computing experience, stimulate interest, and foster creativity. 
-              These workshops can also empower them to overcome hesitations about complex skills and solidify their influence in 
-              the field.
-              </p>
-
-              <p className="text-white/80 leading-relaxed mt-4">
-              By leveraging frameworks rooted in Black Feminist epistemologies, afrofuturism and intersectionality, we will 
-              empower Black women to tap into their lived experiences to create, design and prototype utopias using technical 
-              tools. Allowing Black women to frame their own narratives and equipping them to become contributors of the 
-              technical landscape, challenges existing narratives of what the future and computing should look like.
-              </p>
-            </div>
+    
             
             <div className="glow-card p-8 mb-8">
                 <h2 className="text-2xl font-bold mb-4">Research Questions</h2>

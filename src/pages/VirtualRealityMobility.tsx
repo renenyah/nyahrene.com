@@ -225,6 +225,18 @@ const VirtualRealityMobility: React.FC = () => {
               />
             </div>
           </section>
+          <div className="glow-card p-8 mb-8">
+              <h2 className="text-2xl font-bold mb-4">Motivation</h2>
+              <p className="text-white/80 leading-relaxed">
+                Disability-led design principles remind us that movement is not merely functional,
+                it is creative, personal, and adaptable. This study aims to understand how people
+                with mobility disabilities conceptualize their disability identity within VR spaces
+                and explore their movement preferences for virtual experiences. By centering the
+                perspectives of disability experiences, this research ultimately seeks to expand
+                disability representation in VR and contribute to building more empowering,
+                positive play experiences.
+              </p>
+            </div>
 
             {/* Video Section */}
             <div className="glow-card p-8 mb-8">
@@ -249,19 +261,6 @@ const VirtualRealityMobility: React.FC = () => {
                 <span className="tech-badge-premium">Qualitative</span>
                 <span className="tech-badge-premium">Excel</span>
               </div>
-            </div>
-
-            <div className="glow-card p-8 mb-8">
-              <h2 className="text-2xl font-bold mb-4">Motivation</h2>
-              <p className="text-white/80 leading-relaxed">
-                Disability-led design principles remind us that movement is not merely functional,
-                it is creative, personal, and adaptable. This study aims to understand how people
-                with mobility disabilities conceptualize their disability identity within VR spaces
-                and explore their movement preferences for virtual experiences. By centering the
-                perspectives of disability experiences, this research ultimately seeks to expand
-                disability representation in VR and contribute to building more empowering,
-                positive play experiences.
-              </p>
             </div>
 
             <div className="glow-card p-8 mb-8">
