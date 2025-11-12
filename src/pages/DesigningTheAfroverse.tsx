@@ -67,12 +67,10 @@ const DesigningTheAfroVerse: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-4 mb-6">
-              <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold italic">Designing The AfroVerse</h1>
-              <span className="text-white/60 text-sm lg:text-base font-light whitespace-nowrap">
-                September 2024 - Present
-              </span>
-            </div>
+            <h1 className="text-5xl md:text-6xl font-bold italic mb-4">Designing The AfroVerse</h1>
+            <span className="text-white/60 text-base md:text-lg font-light">
+              September 2024 - Present
+            </span>
           </motion.div>
 
         {/* IMAGE GALLERY */}
