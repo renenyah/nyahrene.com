@@ -194,16 +194,18 @@ const VirtualRealityMobility: React.FC = () => {
             Back to Projects
           </Link>
 
-          {/* Title - BEFORE GALLERY */}
+          {/* TITLE WITH DATE */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <h1 className="text-4xl md:text-6xl font-bold italic mb-6">
-              Virtual Reality Mobility
-            </h1>
+            <h1 className="text-5xl md:text-6xl font-bold italic mb-4">Virtual Reality Mobility</h1>
+            <span className="text-white/60 text-base md:text-lg font-light">
+              May 2024 - Present
+            </span>
+          </motion.div>
 
           {/* TOP PICTURE GALLERY */}
           <section className="mb-16">
@@ -225,7 +227,13 @@ const VirtualRealityMobility: React.FC = () => {
               />
             </div>
           </section>
-          <div className="glow-card p-8 mb-8">
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">Motivation</h2>
               <p className="text-white/80 leading-relaxed">
                 Disability-led design principles remind us that movement is not merely functional,
@@ -237,6 +245,7 @@ const VirtualRealityMobility: React.FC = () => {
                 positive play experiences.
               </p>
             </div>
+
             {/*skills section */}
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">Skills</h2>
@@ -346,15 +355,15 @@ const VirtualRealityMobility: React.FC = () => {
             </div>
 
             <div className="glow-card p-8 mb-8">
-                <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
-                <p className="text-white/80 leading-relaxed mb-4">
+              <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
+              <p className="text-white/80 leading-relaxed mb-4">
                 We are currently in the data analysis phase and in the process of developing our codebook. 
                 While we are still drawing conclusions and working toward composing a research paper, 
                 preliminary observations have emerged regarding identity representation in VR. Notably, 
                 participants who were born with their disability tended to maintain their disabled representation,
                 whereas participants who acquired their disability later in life often preferred to be represented 
                 as able-bodied. Further analysis is ongoing as we continue to uncover additional patterns and insights.
-                 </p>
+              </p>
             </div>
           </motion.div>
         </div>
