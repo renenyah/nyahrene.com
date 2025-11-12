@@ -13,6 +13,7 @@ const ResearchMarquee: React.FC = () => {
     { name: "Physical Computing", icon: <MapPin className="w-5 h-5 mr-2" /> },
     { name: "User Interviews", icon: <Users className="w-5 h-5 mr-2" /> },
     { name: "Java", icon: <Split className="w-5 h-5 mr-2" /> },
+    { name: "Mural", icon: <StickyNote className="w-5 h-5 mr-2" /> },
     { name: "Python", icon: <Layers className="w-5 h-5 mr-2" /> },
     { name: "Usability Testing", icon: <Monitor className="w-5 h-5 mr-2" /> },
     { name: "Participatory Design", icon: <Search className="w-5 h-5 mr-2" /> },

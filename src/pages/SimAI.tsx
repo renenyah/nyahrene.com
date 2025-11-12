@@ -87,6 +87,7 @@ const SimAI: React.FC = () => {
               <span className="tech-badge-premium">Gemini AI</span>
               <span className="tech-badge-premium">Unity</span>
               <span className="tech-badge-premium">AR/VR</span>
+              <span className="tech-badge-premium">Mural</span>
             </div>
           </div>
 
