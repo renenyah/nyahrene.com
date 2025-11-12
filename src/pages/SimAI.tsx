@@ -38,7 +38,7 @@ const SimAI: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           {/* Back button */}
           <Link
-            to ="/#projects"
+            to="/#projects"
             className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -50,154 +50,159 @@ const SimAI: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="mb-12"
           >
-            <h1 className="text-4xl md:text-6xl font-bold italic mb-6">
-              SIM-AI
-            </h1>
-            {/* Add this badge right after the title */}
-            <div className="mb-8">
-              <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-200 text-sm font-semibold">
-                Entrepreneurial Venture
-              </span>
-            </div>
-            {/* Project Image */}
-            <div className="glow-card p-8 mb-16 rounded-2xl border border-white/10 bg-white/5">
-              <div className="rounded-xl overflow-hidden border border-white/10">
-                <img 
-                  src= {getImagePath("/M1.png")}
-                  alt="SIM-AI pattern generation workflow showing VR-guided garment creation"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            {/* Tech Stack Section */}
-              <div className="glow-card p-8 mb-16 rounded-2xl border border-white/10 bg-white/5">
-              <h2 className="text-2xl font-bold mb-4">Tech Stack</h2>
-              <div className="flex flex-wrap gap-3">
-                <span className="tech-badge-premium">Python</span>
-                <span className="tech-badge-premium">React</span>
-                <span className="tech-badge-premium">Figma</span>
-                <span className="tech-badge-premium">Llama3</span>
-                <span className="tech-badge-premium">Gemini AI</span>
-                <span className="tech-badge-premium">Unity</span>
-                <span className="tech-badge-premium">AR/VR</span>
-              </div>
-            </div>
-            {/* Team Section */}
-            <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
-              <h2 className="text-2xl font-bold mb-6">The Team</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Team member 1 */}
-                <div className="flex items-center gap-4">
-                  <img 
-                    src={getImagePath("/ProN.jpg") }
-                    alt="Nyah Rene"
-                    className="w-16 h-16 rounded-full object-cover border-2 border-purple-500/30"
-                  />
-                  <div>
-                    <h3 className="font-bold text-white">Nyah Rene</h3>
-                    <p className="text-white/60 text-sm">Software Engineer & VR Integration Lead</p>
-                  </div>
-                </div>
-                
-                {/* Team member 2 */}
-                <div className="flex items-center gap-4">
-                  <img 
-                    src={getImagePath("/ProM.JPEG")} 
-                    alt="Mariama Barry"
-                    className="w-16 h-16 rounded-full object-cover border-2 border-purple-500/30"
-                    style={{ objectPosition: '50% 10%' }}
-                  />
-                  <div>
-                    <h3 className="font-bold text-white">Mariama Barry</h3>
-                    <p className="text-white/60 text-sm">Backend Engineer & AI Integration Specialist</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Overview Section */}
-            <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
-              <h2 className="text-2xl font-bold mb-4">Overview</h2>
-              <p className="text-white/80 leading-relaxed">
-                SIM-AI is an AI-powered sewing pattern generator that revolutionizes garment creation. 
-                Users can input their garment preferences and receive customized pattern panels, making 
-                pattern-making accessible to designers and sewists of all skill levels.
-              </p>
-            </div>
+            <h1 className="text-5xl md:text-6xl font-bold italic mb-4">SIM-AI</h1>
+            <span className="text-white/60 text-base md:text-lg font-light">
+              August 2024 - Present
+            </span>
+          </motion.div>
 
-            {/* Motivation Section */}
-            <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
-              <h2 className="text-2xl font-bold mb-4">Motivation</h2>
-              <p className="text-white/80 leading-relaxed mb-4">
+          {/* Add this badge right after the title */}
+          <div className="mb-8">
+            <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-200 text-sm font-semibold">
+              Entrepreneurial Venture
+            </span>
+          </div>
+
+          {/* Project Image */}
+          <div className="glow-card p-8 mb-16 rounded-2xl border border-white/10 bg-white/5">
+            <div className="rounded-xl overflow-hidden border border-white/10">
+              <img 
+                src={getImagePath("/M1.png")}
+                alt="SIM-AI pattern generation workflow showing VR-guided garment creation"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Tech Stack Section */}
+          <div className="glow-card p-8 mb-16 rounded-2xl border border-white/10 bg-white/5">
+            <h2 className="text-2xl font-bold mb-4">Tech Stack</h2>
+            <div className="flex flex-wrap gap-3">
+              <span className="tech-badge-premium">Python</span>
+              <span className="tech-badge-premium">React</span>
+              <span className="tech-badge-premium">Figma</span>
+              <span className="tech-badge-premium">Llama3</span>
+              <span className="tech-badge-premium">Gemini AI</span>
+              <span className="tech-badge-premium">Unity</span>
+              <span className="tech-badge-premium">AR/VR</span>
+            </div>
+          </div>
+
+          {/* Team Section */}
+          <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
+            <h2 className="text-2xl font-bold mb-6">The Team</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Team member 1 */}
+              <div className="flex items-center gap-4">
+                <img 
+                  src={getImagePath("/ProN.jpg")}
+                  alt="Nyah Rene"
+                  className="w-16 h-16 rounded-full object-cover border-2 border-purple-500/30"
+                />
+                <div>
+                  <h3 className="font-bold text-white">Nyah Rene</h3>
+                  <p className="text-white/60 text-sm">Software Engineer & VR Integration Lead</p>
+                </div>
+              </div>
+              
+              {/* Team member 2 */}
+              <div className="flex items-center gap-4">
+                <img 
+                  src={getImagePath("/ProM.JPEG")} 
+                  alt="Mariama Barry"
+                  className="w-16 h-16 rounded-full object-cover border-2 border-purple-500/30"
+                  style={{ objectPosition: '50% 10%' }}
+                />
+                <div>
+                  <h3 className="font-bold text-white">Mariama Barry</h3>
+                  <p className="text-white/60 text-sm">Backend Engineer & AI Integration Specialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Overview Section */}
+          <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
+            <h2 className="text-2xl font-bold mb-4">Overview</h2>
+            <p className="text-white/80 leading-relaxed">
+              SIM-AI is an AI-powered sewing pattern generator that revolutionizes garment creation. 
+              Users can input their garment preferences and receive customized pattern panels, making 
+              pattern-making accessible to designers and sewists of all skill levels.
+            </p>
+          </div>
+
+          {/* Motivation Section */}
+          <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
+            <h2 className="text-2xl font-bold mb-4">Motivation</h2>
+            <p className="text-white/80 leading-relaxed mb-4">
               Traditional pattern-making is slow, costly, and prone to miscommunication between designers and manufacturers. 
               SIM-AI streamlines this process by using AI to instantly generate customized patterns from your ideas, saving time, 
               resources, and ensuring your creative vision is captured accurately.
-              </p>
-              <p className="text-white/80 leading-relaxed">
+            </p>
+            <p className="text-white/80 leading-relaxed">
               We're using AI to make professional-quality garment creation easy and accessible for everyone, 
               whether you're a hobbyist or an experienced designer. SIM-AI doesn't just generate patterns, it 
               guides creatives through the process, helping you turn abstract ideas into real garments while 
               learning pattern-making fundamentals along the way!
+            </p>
+          </div>
+
+          {/* Goals Section */}
+          <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
+            <h2 className="text-2xl font-bold mb-4">Goals</h2>
+            <ul className="space-y-3 text-white/80">
+              <li className="flex items-start gap-3">
+                <span className="text-white mt-1">→</span>
+                <span>Improve accuracy in clothing type recognition and constructional details</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-white mt-1">→</span>
+                <span>Develop a working front end to test product functionality with designers and creatives</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-white mt-1">→</span>
+                <span>Integrate Gemini AI for enhanced pattern customization capabilities</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-white mt-1">→</span>
+                <span>Explore AR/VR integration for 3D garment visualization</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-white mt-1">→</span>
+                <span>Develop 2D pattern projection capabilities using projector technology</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-white mt-1">→</span>
+                <span>Make the tool accessible on mobile devices</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Progress Section */}
+          <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
+            <h2 className="text-2xl font-bold mb-4">What We've Built So Far</h2>
+            <div className="space-y-4 text-white/80">
+              <p className="leading-relaxed">
+                <strong className="text-white">Working Backend Demo:</strong> We've successfully developed a 
+                functional demo using Llama3 that demonstrates the core pattern customization system.
+              </p>
+              <p className="leading-relaxed">
+                <strong className="text-white">Dataset Expansion:</strong> Currently expanding our 
+                collection of basic patterns to improve the variety and accuracy of generated outputs.
+              </p>
+              <p className="leading-relaxed">
+                <strong className="text-white">Recognition System:</strong> Developing metrics to measure 
+                success in clothing type accuracy and the ability to distinguish between different garment 
+                styles.
+              </p>
+              <p className="leading-relaxed">
+                <strong className="text-white">Unity & VR Research:</strong> Team members have begun 
+                exploring Unity and VR coding for future AR/VR integration planned for the second semester.
               </p>
             </div>
-
-            {/* Goals Section */}
-            <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
-              <h2 className="text-2xl font-bold mb-4">Goals</h2>
-              <ul className="space-y-3 text-white/80">
-                <li className="flex items-start gap-3">
-                  <span className="text-white mt-1">→</span>
-                  <span>Improve accuracy in clothing type recognition and constructional details</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-white mt-1">→</span>
-                  <span>Develop a working front end to test product functionality with designers and creatives</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-white mt-1">→</span>
-                  <span>Integrate Gemini AI for enhanced pattern customization capabilities</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-white mt-1">→</span>
-                  <span>Explore AR/VR integration for 3D garment visualization</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-white mt-1">→</span>
-                  <span>Develop 2D pattern projection capabilities using projector technology</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-white mt-1">→</span>
-                  <span>Make the tool accessible on mobile devices</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Progress Section */}
-            <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
-              <h2 className="text-2xl font-bold mb-4">What We've Built So Far</h2>
-              <div className="space-y-4 text-white/80">
-                <p className="leading-relaxed">
-                  <strong className="text-white">Working Backend Demo:</strong> We've successfully developed a 
-                  functional demo using Llama3 that demonstrates the core pattern customization system.
-                </p>
-                <p className="leading-relaxed">
-                  <strong className="text-white">Dataset Expansion:</strong> Currently expanding our 
-                  collection of basic patterns to improve the variety and accuracy of generated outputs.
-                </p>
-                <p className="leading-relaxed">
-                  <strong className="text-white">Recognition System:</strong> Developing metrics to measure 
-                  success in clothing type accuracy and the ability to distinguish between different garment 
-                  styles.
-                </p>
-                <p className="leading-relaxed">
-                  <strong className="text-white">Unity & VR Research:</strong> Team members have begun 
-                  exploring Unity and VR coding for future AR/VR integration planned for the second semester.
-                </p>
-              </div>
-            </div>
-
-          </motion.div>
+          </div>
         </div>
       </main>
 
