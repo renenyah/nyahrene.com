@@ -203,7 +203,7 @@ const VirtualRealityMobility: React.FC = () => {
           >
             <h1 className="text-5xl md:text-6xl font-bold italic mb-4">Virtual Reality Mobility</h1>
             <span className="text-white/60 text-base md:text-lg font-light">
-              May 2025 - Present
+              Carnegie Mellon Univeristy Human Computer Interaction Institute | May 2025 - Present
             </span>
           </motion.div>
 

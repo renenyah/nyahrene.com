@@ -69,7 +69,7 @@ const DesigningTheAfroVerse: React.FC = () => {
           >
             <h1 className="text-5xl md:text-6xl font-bold italic mb-4">Designing The AfroVerse</h1>
             <span className="text-white/60 text-base md:text-lg font-light">
-              January 2025 - Present
+              Emory University | January 2025 - Present
             </span>
           </motion.div>
 
