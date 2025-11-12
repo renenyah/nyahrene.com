@@ -117,7 +117,7 @@ const AboutMePage: React.FC = () => {
                   <p>
                     Hi! My name is <span className="text-white font-semibold">Nyah Rene</span>. I am a Haitian-American aspiring UX researcher who enjoys exploring the intersection of technology, design, 
                     and human–computer interaction. My research experiences have deepened my passion for understanding users by creating accessible and inclusive technologies. I also have a strong interest in 
-                    fashion and how it connects to self-expression and creativity. I’m currently a senior at Emory University, graduating in December 2026 with a Bachelor of Science in Computer Science. 
+                    fashion and how it connects to self-expression and creativity. I’m currently a junior at Emory University, graduating in December 2026 with a Bachelor of Science in Computer Science. 
                   </p>
                 </div>
               </motion.div>
