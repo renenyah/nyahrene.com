@@ -94,7 +94,7 @@ const EducationTimeline: React.FC = () => {
             >
               resume
             </a>
-            {' '}for more detailed experiences ✨
+            {' '}for more detailed experiences!
           </p>
         </motion.div>
       </div>
