@@ -32,7 +32,7 @@ const ProjectsSection: React.FC = () => {
       id: 2,
       title: "Designing the AfroVerse",
       description: "",
-      techStack: ["Physical Computing", "Participatory Design", "HCI"],
+      techStack: ["Physical Computing", "Participatory Design", "HCI", "Maker Space", "E-textiles"],
       url: "/project/designing-the-afroverse",
       image: getImagePath("/afroverse.png"),
       location: "Emory University" // Add your location
