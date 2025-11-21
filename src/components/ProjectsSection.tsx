@@ -38,7 +38,7 @@ const ProjectsSection: React.FC = () => {
       location: "Emory University" // Add your location
     },
     {
-      id: 3,
+      id: 3, 
       title: "SIM-AI",
       description: "",
       techStack: ["Python", "Fashion", "React", "PostgreSQL"],
