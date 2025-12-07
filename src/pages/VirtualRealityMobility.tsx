@@ -329,7 +329,8 @@ const VirtualRealityMobility: React.FC = () => {
               </ol>
             </div>
 
-            <h2 className="text-2xl font-bold mb-4">My Contribution</h2>
+            <div className="glow-card p-8 mb-8">
+              <h2 className="text-2xl font-bold mb-4">My Contribution</h2>
               <p className="text-white/80 leading-relaxed mb-4">
                 This study is currently in the data analysis phase. My contributions include:
               </p>
@@ -363,6 +364,7 @@ const VirtualRealityMobility: React.FC = () => {
                   </p>
                 </div>
               </div>
+            </div>
 
             {/* Storyboard Gallery */}
             <div className="glow-card p-8 mb-8">
