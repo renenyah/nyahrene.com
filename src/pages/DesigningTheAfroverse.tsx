@@ -266,7 +266,7 @@ const DesigningTheAfroVerse: React.FC = () => {
                 <div className="border-l-2 border-pink-400/30 pl-4">
                   <div className="flex flex-col md:flex-row gap-4 mb-2">
                     <img 
-                      src={getImagePath('P1.jpg')}
+                      src={getImagePath('P1.JPG')}
                       alt="P1 Project" 
                       className="w-full md:w-48 h-48 object-cover rounded-lg border border-white/10"
                     />
@@ -318,7 +318,7 @@ const DesigningTheAfroVerse: React.FC = () => {
                 <div className="border-l-2 border-pink-400/30 pl-4">
                   <div className="flex flex-col md:flex-row gap-4 mb-2">
                     <img 
-                      src={getImagePath('P3.jpg')}
+                      src={getImagePath('P3.JPG')}
                       alt="P3 Project" 
                       className="w-full md:w-48 h-48 object-cover rounded-lg border border-white/10"
                     />
