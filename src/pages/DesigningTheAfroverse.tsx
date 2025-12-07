@@ -137,6 +137,10 @@ const DesigningTheAfroVerse: React.FC = () => {
                 <span className="tech-badge-premium">Qualitative Analysis</span>
                 <span className="tech-badge-premium">E-Textiles</span>
                 <span className="tech-badge-premium">Participatory Design</span>
+                <span className="tech-badge-premium">PowerPoint</span>
+                <span className="tech-badge-premium">Google Sheets</span>
+                <span className="tech-badge-premium">Google Forms</span>
+                <span className="tech-badge-premium">User Persona</span>
               </div>
             </div>
             <div className="glow-card p-8 mb-8">
