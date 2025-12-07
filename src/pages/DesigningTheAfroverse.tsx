@@ -268,15 +268,22 @@ const DesigningTheAfroVerse: React.FC = () => {
             <div className="glow-card p-8 mb-8">
                 <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
                 <p className="text-white/80 leading-relaxed mb-4">
-                 While this study is still in its early stages, we are already observing encouraging patterns of engagement. 
-                 Since launching the workshops, we have seen growing interest and participation from Black women across various 
-                 disciplines at Emory, suggesting that creating culturally relevant, hands-on design spaces may help bridge the 
-                 gap between interest and active involvement in technology fields.
+                Since launching the workshops, we've engaged <span className="font-bold text-white">11+ Black women</span> across various disciplines at Emory in hands-on maker activities 
+                including 3D printing, laser cutting, and Arduino programming. Early results show promising outcomes: <span className="font-bold text-white">50% of participants now 
+                confidently apply these technical skills independently</span>, demonstrating the impact of culturally relevant, hands-on design spaces 
+                in building genuine technical competency.
                  </p>
 
-                 <p className="text-white/80 leading-relaxed">
-                 Comprehensive findings will be available as the study progresses. Check back soon for deeper insights on 
-                 participant experiences and outcomes.
+                 <p className="text-white/80 leading-relaxed mb-4">
+                 Through ongoing analysis of participant surveys and diary study entries, we're identifying key community-based needs and usage 
+                 barriers. These insights have directly informed our methodology refinements, contributing to an impressive <span className="font-bold text-white">90% retention rate</span> 
+                 across the program—a strong indicator that we're successfully creating spaces where Black women feel supported and motivated to 
+                 continue their technology journeys.
+                </p>
+                <p className="text-white/80 leading-relaxed">
+                As the study progresses, we're continuing to gather deeper insights on participant experiences and long-term outcomes. Check back 
+                soon for comprehensive findings on how culturally affirming maker spaces can help bridge the gap between interest and active 
+                involvement in technology fields.
                 </p>
             </div>
           </motion.div>
