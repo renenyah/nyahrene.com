@@ -352,7 +352,7 @@ const VirtualRealityMobility: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">Data Analysis & Knowledge Management</h3>
                   <p className="text-white/80 leading-relaxed">
-                    Built a categorized tagging system for our research repository that reduced stakeholder insight retrieval time by <span className="font-bold text-white">65%</span>. Currently developing the codebook and leading analysis that identified <span className="font-bold text-white">8 critical usability barriers</span>, with findings informing our product roadmap and VR interaction redesign.
+                  Built a categorized tagging system for our research repository to streamline cross-project knowledge sharing. Currently developing the codebook using Atlas.ti and Google Sheets. Leading qualitative analysis to identify usability barriers and patterns in identity representation, with findings directly informing our product roadmap and VR interaction redesign.
                   </p>
                 </div>
 
@@ -379,7 +379,7 @@ const VirtualRealityMobility: React.FC = () => {
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
               <p className="text-white/80 leading-relaxed mb-4">
-                Through interviews and moderated testing with <span className="font-bold text-white">12+ motor-impaired users</span>, we identified 
+                Through interviews and moderated testing with  motor-impaired users, we identified 
                 <span className="font-bold text-white"> 8 critical usability barriers</span> that directly shaped our research/product roadmap and VR interaction 
                 redesign. To manage the rich qualitative data from our research, I built a categorized 
                 tagging system that reduced insight retrieval time by <span className="font-bold text-white">65%</span>, enabling faster 
