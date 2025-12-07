@@ -130,8 +130,13 @@ const DesigningTheAfroVerse: React.FC = () => {
                 <span className="tech-badge-premium">Usability Testing</span>
                 <span className="tech-badge-premium">Laser Cutting</span>
                 <span className="tech-badge-premium">Embroidery</span>
-                <span className="tech-badge-premium">Sewing</span>
-                <span className="tech-badge-premium">Arduino</span>
+                <span className="tech-badge-premium">Sewing Machine</span>
+                <span className="tech-badge-premium">Arduino Programming</span>
+                <span className="tech-badge-premium">3D Modeling</span>
+                <span className="tech-badge-premium">Diary Studies</span>
+                <span className="tech-badge-premium">Qualitative Analysis</span>
+                <span className="tech-badge-premium">E-Textiles</span>
+                <span className="tech-badge-premium">Participatory Design</span>
               </div>
             </div>
             <div className="glow-card p-8 mb-8">
@@ -278,11 +283,11 @@ const DesigningTheAfroVerse: React.FC = () => {
                         </div>
                         <div className="flex gap-2 text-xs flex-wrap">
                           <span className="px-2 py-1 bg-white/10 rounded">3D Printing</span>
-                          <span className="px-2 py-1 bg-white/10 rounded">QR Code</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">3D Modeling</span>
                         </div>
                       </div>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Portable note-taking device that absorbs information and allows users to revisit notes by scanning a QR code, fostering knowledge sharing and community connection.
+                      Voice-activated portable note-taking device that absorbs information through speech and allows users to revisit notes by scanning a QR code, fostering knowledge sharing and community connection.
                       </p>
                     </div>
                   </div>
@@ -303,13 +308,15 @@ const DesigningTheAfroVerse: React.FC = () => {
                           <p className="text-sm text-pink-400">Fashion</p>
                         </div>
                         <div className="flex gap-2 text-xs flex-wrap">
-                          <span className="px-2 py-1 bg-white/10 rounded">Arduino</span>
-                          <span className="px-2 py-1 bg-white/10 rounded">Fabric Cutting</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Arduino Programming</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Breadboard</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Sewing Machine</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">LEDs</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Resistors</span>
                         </div>
                       </div>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Arduino-powered belt that automatically cuts off excess material when the waist of jeans is too big, addressing fit challenges and reducing fabric waste.
-                      </p>
+                      Arduino-powered smart belt that automatically trims excess fabric from oversized garments to achieve a better waist fit, addressing fit challenges and reducing fabric waste.                      </p>
                     </div>
                   </div>
                 </div>
@@ -330,11 +337,11 @@ const DesigningTheAfroVerse: React.FC = () => {
                         </div>
                         <div className="flex gap-2 text-xs flex-wrap">
                           <span className="px-2 py-1 bg-white/10 rounded">3D Printing</span>
-                          <span className="px-2 py-1 bg-white/10 rounded">Heat Design</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">3D Modeling</span>
                         </div>
                       </div>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Specialized straightening tool designed for micro locs, filling a gap in hair care products and easing the hassle of difficult hair routines for this underserved hair type.
+                        Specialized straightening tool designed for micro locs, filling a gap in hair care products and easing the hassle of difficult hair routines for this hair type.
                       </p>
                     </div>
                   </div>
@@ -356,7 +363,8 @@ const DesigningTheAfroVerse: React.FC = () => {
                         </div>
                         <div className="flex gap-2 text-xs flex-wrap">
                           <span className="px-2 py-1 bg-white/10 rounded">Embroidery</span>
-                          <span className="px-2 py-1 bg-white/10 rounded">Textile Design</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Cricut</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Sublimation</span>
                         </div>
                       </div>
                       <p className="text-white/70 text-sm leading-relaxed">
@@ -381,14 +389,13 @@ const DesigningTheAfroVerse: React.FC = () => {
                           <p className="text-sm text-pink-400">Self-Awareness</p>
                         </div>
                         <div className="flex gap-2 text-xs flex-wrap">
-                          <span className="px-2 py-1 bg-white/10 rounded">Arduino</span>
-                          <span className="px-2 py-1 bg-white/10 rounded">LED</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Arduino Programming</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">LEDs</span>
                           <span className="px-2 py-1 bg-white/10 rounded">Conductive Materials</span>
                         </div>
                       </div>
                       <p className="text-white/70 text-sm leading-relaxed">
-                        Interactive piece where the shirt lights up only when she is recognized, and her full potential is revealed through touch. Her hair connects to the roots of a tree, symbolizing the depth required to truly see and understand Black women.
-                      </p>
+                      Interactive wearable piece where touching the woman depicted on the shirt causes the tree to light up, revealing her full potential through this connection. Her hair flows into the tree's roots, symbolizing the depth required to truly see and understand Black women.                      </p>
                     </div>
                   </div>
                 </div>
@@ -408,9 +415,9 @@ const DesigningTheAfroVerse: React.FC = () => {
                           <p className="text-sm text-pink-400">Global Awareness</p>
                         </div>
                         <div className="flex gap-2 text-xs flex-wrap">
-                          <span className="px-2 py-1 bg-white/10 rounded">Laser Cutting</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Arduino Programming</span>
                           <span className="px-2 py-1 bg-white/10 rounded">Textile Art</span>
-                          <span className="px-2 py-1 bg-white/10 rounded">Sewing</span>
+                          <span className="px-2 py-1 bg-white/10 rounded">Sewing Machine</span>
                         </div>
                       </div>
                       <p className="text-white/70 text-sm leading-relaxed">
