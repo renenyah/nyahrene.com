@@ -250,7 +250,7 @@ const VirtualRealityMobility: React.FC = () => {
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">Skills</h2>
               <div className="flex flex-wrap gap-3">
-                <span className="tech-badge-premium">Interviews</span>
+                <span className="tech-badge-premium">In Depth Interviews</span>
                 <span className="tech-badge-premium">Storyboard</span>
                 <span className="tech-badge-premium">Virtual Reality</span>
                 <span className="tech-badge-premium">Unity Programming</span>
@@ -358,10 +358,10 @@ const VirtualRealityMobility: React.FC = () => {
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
               <p className="text-white/80 leading-relaxed mb-4">
-                Through interviews and moderated testing with <span className="font-bold">12+ motor-impaired users</span>, we identified 
-                <span className="font-bold"> 8 critical usability barriers</span> that directly shaped our research/product roadmap and VR interaction 
+                Through interviews and moderated testing with <span className="font-bold text-white">12+ motor-impaired users</span>, we identified 
+                <span className="font-bold text-white"> 8 critical usability barriers</span> that directly shaped our research/product roadmap and VR interaction 
                 redesign. To manage the rich qualitative data from our research, I built a categorized 
-                tagging system that reduced insight retrieval time by <span className="font-bold">65%</span>, enabling faster 
+                tagging system that reduced insight retrieval time by <span className="font-bold text-white">65%</span>, enabling faster 
                 cross-project knowledge sharing and decision-making.
               </p>
               <p className="text-white/80 leading-relaxed">
@@ -369,7 +369,7 @@ const VirtualRealityMobility: React.FC = () => {
               from the research. Early patterns are beginning to emerge around identity representation: 
               participants who were born with their disability tended to maintain their disabled representation 
               in VR, while those who acquired their disability later in life often preferred able-bodied avatars. 
-              As we continue our analysis, I am preparing the research paper as <span className="font-bold">first author</span> for submission 
+              As we continue our analysis, I am preparing the research paper as <span className="font-bold text-white">first author</span> for submission 
               to the Designing Interactive Systems Conference 2026.
               </p>
             </div>
