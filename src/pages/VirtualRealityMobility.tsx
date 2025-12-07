@@ -329,19 +329,40 @@ const VirtualRealityMobility: React.FC = () => {
               </ol>
             </div>
 
-            <div className="glow-card p-8 mb-8">
-              <h2 className="text-2xl font-bold mb-4">My Contribution</h2>
-              <p className="text-white/80 leading-relaxed">
-                My work consisted of programming a virtual environment using Unity paired with the
-                Meta Oculus headset to provide an interactive experience for users in our focus group.
-                I conducted interviews to learn about each participant's experience with their disability
-                and sketched out a storyboard of a virtual environment of their choosing that they imagined
-                and would like to explore. Participants envisioned experiences and movement that were
-                entirely new to them, didn't yet exist, or recreated past experiences they wanted to relive.
-                I also added Mixamo avatar animations and programmed different movement options for people
-                with mobility disabilities, including arm-swinging, hand-pulling, teleportation, and more!
+            <h2 className="text-2xl font-bold mb-4">My Contribution</h2>
+              <p className="text-white/80 leading-relaxed mb-4">
+                This study is currently in the data analysis phase. My contributions include:
               </p>
-            </div>
+
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Research & Participant Engagement</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Conducted <span className="font-bold text-white">12+ in-depth interviews</span> with motor-impaired participants to understand their lived experiences with disability and facilitated collaborative storyboarding sessions where participants envisioned personalized virtual environments—ranging from entirely new mobility experiences to recreations of cherished past moments they wanted to relive.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Technical Development</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Programmed a custom virtual environment in <span className="font-bold text-white">Unity</span> paired with the <span className="font-bold text-white">Meta Quest headset</span>, implementing multiple accessible locomotion systems including arm-swinging, hand-pulling, and teleportation mechanics. Integrated <span className="font-bold text-white">Mixamo avatar animations</span> to accommodate diverse mobility needs and interaction preferences.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Data Analysis & Knowledge Management</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Built a categorized tagging system for our research repository that reduced stakeholder insight retrieval time by <span className="font-bold text-white">65%</span>. Currently developing the codebook and leading analysis that identified <span className="font-bold text-white">8 critical usability barriers</span>, with findings informing our product roadmap and VR interaction redesign.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Research Publication</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Preparing research paper as <span className="font-bold text-white">first author</span> for submission to the <span className="font-bold text-white">Designing Interactive Systems Conference 2026</span>, synthesizing our findings on identity representation and accessibility in VR environments.
+                  </p>
+                </div>
+              </div>
 
             {/* Storyboard Gallery */}
             <div className="glow-card p-8 mb-8">
