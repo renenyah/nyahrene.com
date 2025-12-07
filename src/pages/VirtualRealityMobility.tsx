@@ -338,14 +338,14 @@ const VirtualRealityMobility: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">Research & Participant Engagement</h3>
                   <p className="text-white/80 leading-relaxed">
-                    Conducted <span className="font-bold text-white">12+ in-depth interviews</span> with motor-impaired participants to understand their lived experiences with disability and facilitated collaborative storyboarding sessions where participants envisioned personalized virtual environments—ranging from entirely new mobility experiences to recreations of cherished past moments they wanted to relive.
+                    Conducted <span className="font-bold text-white"> 12+ </span> in-depth interviews with motor-impaired participants to understand their lived experiences with disability and facilitated collaborative storyboarding sessions where participants envisioned personalized virtual environments, ranging from entirely new mobility experiences to recreations of cherished past moments they wanted to relive.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">Technical Development</h3>
                   <p className="text-white/80 leading-relaxed">
-                    Programmed a custom virtual environment in <span className="font-bold text-white">Unity</span> paired with the <span className="font-bold text-white">Meta Quest headset</span>, implementing multiple accessible locomotion systems including arm-swinging, hand-pulling, and teleportation mechanics. Integrated <span className="font-bold text-white">Mixamo avatar animations</span> to accommodate diverse mobility needs and interaction preferences.
+                    Programmed a custom virtual environment in <span className="font-bold text-white">Unity</span> paired with the <span className="font-bold text-white">Meta Quest headset</span>, implementing multiple accessible locomotion systems including arm-swinging, hand-pulling, and teleportation mechanics. Integrated Mixamo avatar animations to accommodate diverse mobility needs and interaction preferences.
                   </p>
                 </div>
 
@@ -359,7 +359,7 @@ const VirtualRealityMobility: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">Research Publication</h3>
                   <p className="text-white/80 leading-relaxed">
-                    Preparing research paper as <span className="font-bold text-white">first author</span> for submission to the <span className="font-bold text-white">Designing Interactive Systems Conference 2026</span>, synthesizing our findings on identity representation and accessibility in VR environments.
+                    Preparing research paper as <span className="font-bold text-white">first author</span> for submission to the Designing Interactive Systems Conference 2026, synthesizing our findings on identity representation and accessibility in VR environments.
                   </p>
                 </div>
               </div>
