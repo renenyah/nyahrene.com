@@ -253,6 +253,118 @@ const DesigningTheAfroVerse: React.FC = () => {
                 </div>
               </div>
             </div>
+            <div className="glow-card p-8 mb-8">
+              <h2 className="text-2xl font-bold mb-4">Participant Projects</h2>
+              <p className="text-white/80 mb-6 text-sm">
+                Exploring futures through culturally-grounded design and technology
+              </p>
+              
+              <div className="space-y-6">
+                {/* Tierra */}
+                <div className="border-l-2 border-pink-400/30 pl-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="text-lg font-bold text-white">Tierra</h3>
+                      <p className="text-sm text-pink-400">Community Building</p>
+                    </div>
+                    <div className="flex gap-2 text-xs">
+                      <span className="px-2 py-1 bg-white/10 rounded">3D Printing</span>
+                      <span className="px-2 py-1 bg-white/10 rounded">QR Code</span>
+                    </div>
+                  </div>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Portable note-taking device that absorbs information and allows users to revisit notes by scanning a QR code, fostering knowledge sharing and community connection.
+                  </p>
+                </div>
+
+                {/* Kultum */}
+                <div className="border-l-2 border-pink-400/30 pl-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="text-lg font-bold text-white">Kultum</h3>
+                      <p className="text-sm text-pink-400">Fashion</p>
+                    </div>
+                    <div className="flex gap-2 text-xs">
+                      <span className="px-2 py-1 bg-white/10 rounded">Arduino</span>
+                      <span className="px-2 py-1 bg-white/10 rounded">Fabric Cutting</span>
+                    </div>
+                  </div>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Arduino-powered belt that automatically cuts off excess material when the waist of jeans is too big, addressing fit challenges and reducing fabric waste.
+                  </p>
+                </div>
+
+                {/* Oluchi */}
+                <div className="border-l-2 border-pink-400/30 pl-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="text-lg font-bold text-white">Oluchi</h3>
+                      <p className="text-sm text-pink-400">Beauty</p>
+                    </div>
+                    <div className="flex gap-2 text-xs">
+                      <span className="px-2 py-1 bg-white/10 rounded">3D Printing</span>
+                      <span className="px-2 py-1 bg-white/10 rounded">Heat Design</span>
+                    </div>
+                  </div>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Specialized straightening tool designed for micro locs, filling a gap in hair care products and easing the hassle of difficult hair routines for this underserved hair type.
+                  </p>
+                </div>
+
+                {/* Lolu */}
+                <div className="border-l-2 border-pink-400/30 pl-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="text-lg font-bold text-white">Lolu</h3>
+                      <p className="text-sm text-pink-400">Self-Care</p>
+                    </div>
+                    <div className="flex gap-2 text-xs">
+                      <span className="px-2 py-1 bg-white/10 rounded">Embroidery</span>
+                      <span className="px-2 py-1 bg-white/10 rounded">Textile Design</span>
+                    </div>
+                  </div>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Motivational shirt inspired by Psalm 61:5, reminding the wearer that even when the future looks uncertain, they shine because they are "Reserved For Greatness."
+                  </p>
+                </div>
+
+                {/* Covenant */}
+                <div className="border-l-2 border-pink-400/30 pl-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="text-lg font-bold text-white">Covenant</h3>
+                      <p className="text-sm text-pink-400">Self-Awareness</p>
+                    </div>
+                    <div className="flex gap-2 text-xs">
+                      <span className="px-2 py-1 bg-white/10 rounded">Arduino</span>
+                      <span className="px-2 py-1 bg-white/10 rounded">LED</span>
+                      <span className="px-2 py-1 bg-white/10 rounded">Conductive Materials</span>
+                    </div>
+                  </div>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Interactive piece where the street lights up only when she is recognized, and her full potential is revealed through touch. Her hair connects to the roots of a tree, symbolizing the depth required to truly see and understand Black women.
+                  </p>
+                </div>
+
+                {/* Marielle */}
+                <div className="border-l-2 border-pink-400/30 pl-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="text-lg font-bold text-white">Marielle</h3>
+                      <p className="text-sm text-pink-400">Global Awareness</p>
+                    </div>
+                    <div className="flex gap-2 text-xs">
+                      <span className="px-2 py-1 bg-white/10 rounded">Laser Cutting</span>
+                      <span className="px-2 py-1 bg-white/10 rounded">Textile Art</span>
+                      <span className="px-2 py-1 bg-white/10 rounded">Sewing</span>
+                    </div>
+                  </div>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Fabric-based installation bringing awareness to the Democratic Republic of Congo. The savannah-themed design represents what Congo could look like without ongoing violence, honoring its mountains and African cultural heritage.
+                  </p>
+                </div>
+              </div>
+            </div>
             
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">My Contribution</h2>
@@ -308,7 +420,7 @@ const DesigningTheAfroVerse: React.FC = () => {
 
                  <p className="text-white/80 leading-relaxed mb-4">
                  Through ongoing analysis of participant surveys and diary study entries, we're identifying key community-based needs and usage 
-                 barriers. These insights have directly informed our methodology refinements, contributing to an impressive <span className="font-bold text-white">90% retention rate</span> 
+                 barriers. These insights have directly informed our methodology refinements, contributing to an impressive <span className="font-bold text-white">90% retention rate </span> 
                   across the program which is a strong indicator that we're successfully creating spaces where Black women feel supported and motivated to 
                  continue their technology journeys.
                 </p>
