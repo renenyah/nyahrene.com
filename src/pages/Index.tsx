@@ -91,6 +91,7 @@ const Index: React.FC = () => {
                 <li>
                 <a
                 href="https://drive.google.com/file/d/18q9joEZgDkPCe48yxdbyTEjGkHSThwhQ/view?usp=sharing"
+                
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-button-premium text-sm px-4 py-1"
