@@ -256,12 +256,44 @@ const DesigningTheAfroVerse: React.FC = () => {
             
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">My Contribution</h2>
-              <p className="text-white/80 leading-relaxed">
-              This study is currently in progress and we are in our first session. My contributions so far include submitting 
-              the IRB application, reviewing research to identify best practices for our study, training myself on technical 
-              equipment including but not limited to 3D printers, laser cutters, embroidery machines, and arduino so I can effectively 
-              teach and collaborate with participants, and designing the structure and flow of each workshop session.
+              <p className="text-white/80 leading-relaxed mb-4">
+              This study is currently in progress and we are in our first session. My contributions so far include:
               </p>
+              
+              <div className="space-y-4 text-white/80">
+                <div>
+                  <h3 className="font-bold text-white mb-2">Research & Ethics</h3>
+                  <p className="leading-relaxed">
+                  Submitted and secured IRB approval for the study, and conducted a comprehensive literature review to identify 
+                  best practices for engaging underrepresented groups in maker spaces and technology education.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="font-bold text-white mb-2">Technical Expertise</h3>
+                  <p className="leading-relaxed">
+                  Independently trained on multiple maker technologies including 3D printers, laser cutters, embroidery machines, 
+                  and Arduino microcontrollers to effectively teach and mentor participants throughout the workshops.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="font-bold text-white mb-2">Curriculum Design</h3>
+                  <p className="leading-relaxed">
+                  Developed the structure and flow of each workshop session, creating hands-on activities that balance 
+                  skill-building with community engagement and cultural relevance. Facilitated ideation sessions for persona 
+                  development, helping participants ground their design work in authentic narratives and lived experiences.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="font-bold text-white mb-2">Data Collection</h3>
+                  <p className="leading-relaxed">
+                  Designed survey instruments and diary study protocols to capture participant experiences, skill development, 
+                  and barriers to engagement.
+                  </p>
+                </div>
+              </div>
             </div>
           
 
@@ -277,7 +309,7 @@ const DesigningTheAfroVerse: React.FC = () => {
                  <p className="text-white/80 leading-relaxed mb-4">
                  Through ongoing analysis of participant surveys and diary study entries, we're identifying key community-based needs and usage 
                  barriers. These insights have directly informed our methodology refinements, contributing to an impressive <span className="font-bold text-white">90% retention rate</span> 
-                 across the program—a strong indicator that we're successfully creating spaces where Black women feel supported and motivated to 
+                  across the program which is a strong indicator that we're successfully creating spaces where Black women feel supported and motivated to 
                  continue their technology journeys.
                 </p>
                 <p className="text-white/80 leading-relaxed">
