@@ -63,7 +63,7 @@ const AboutMePage: React.FC = () => {
               </li>
               <li>
               <a 
-                href="https://drive.google.com/file/d/1krmTRaIgebX2mCOUOae01PTc5SCsunGG/view?usp=sharing" 
+                href="https://drive.google.com/file/d/18q9joEZgDkPCe48yxdbyTEjGkHSThwhQ/view?usp=sharing" 
                 className="cta-button-premium text-sm px-4 py-1"
                 target="_blank"
                 rel="noopener noreferrer"
