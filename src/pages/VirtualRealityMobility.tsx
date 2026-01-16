@@ -207,6 +207,17 @@ const VirtualRealityMobility: React.FC = () => {
             </span>
           </motion.div>
 
+          {/* Team Members Image */}
+          <div className="glow-card p-8 mb-16 rounded-2xl border border-white/10 bg-white/5">
+            <div className="rounded-xl overflow-hidden border border-white/10">
+              <img 
+                src={getImagePath("A11yPicture.png")}
+                alt=" Participants Who Ranged In Different Mobility Disabilities"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
           {/* TOP PICTURE GALLERY */}
           <section className="mb-16">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
