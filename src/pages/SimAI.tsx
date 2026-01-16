@@ -124,6 +124,17 @@ const SimAI: React.FC = () => {
             </div>
           </div>
           
+          {/* Team Members Image */}
+          <div className="glow-card p-8 mb-16 rounded-2xl border border-white/10 bg-white/5">
+            <div className="rounded-xl overflow-hidden border border-white/10">
+              <img 
+                src={getImagePath("/MontAIgeTeamMembers.JPG")}
+                alt="SIM-AI pattern generation workflow showing VR-guided garment creation"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
           {/* Overview Section */}
           <div className="glow-card p-8 mb-8 rounded-2xl border border-white/10 bg-white/5">
             <h2 className="text-2xl font-bold mb-4">Overview</h2>
