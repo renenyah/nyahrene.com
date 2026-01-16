@@ -207,17 +207,6 @@ const VirtualRealityMobility: React.FC = () => {
             </span>
           </motion.div>
 
-            {/* Mobility Representation Image */}
-            <div className="glow-card mb-16 rounded-2xl bg-white/5 -mx-8">
-              <div className="rounded-xl overflow-hidden">
-                <img 
-                  src={getImagePath("A11yPicture.png")}
-                  alt=" Participants Who Ranged In Different Mobility Disabilities"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-            </div>
-
 
           {/* TOP PICTURE GALLERY */}
           <section className="mb-16">
@@ -256,6 +245,17 @@ const VirtualRealityMobility: React.FC = () => {
                 disability representation in VR and contribute to building more empowering,
                 positive play experiences.
               </p>
+            </div>
+
+            {/* Mobility Representation Image */}
+            <div className="glow-card mb-16 rounded-2xl bg-white/5 -mx-8">
+              <div className="rounded-xl overflow-hidden">
+                <img 
+                  src={getImagePath("A11yPicture.png")}
+                  alt=" Participants Who Ranged In Different Mobility Disabilities"
+                  className="w-full object-contain"
+                />
+              </div>
             </div>
 
             {/*skills section */}
@@ -404,8 +404,8 @@ const VirtualRealityMobility: React.FC = () => {
               from the research. Early patterns are beginning to emerge around identity representation: 
               participants who were born with their disability tended to maintain their disabled representation 
               in VR, while those who acquired their disability later in life often preferred able-bodied avatars. 
-              As we continue our analysis, I am preparing the research paper as <span className="font-bold text-white">first author</span> for submission 
-              to the Designing Interactive Systems Conference 2026.
+              As we continue our analysis, I am preparing the research paper as <span className="font-bold text-white">second author</span> for submission 
+              to the ASSESTS Conference 2026.
               </p>
             </div>
           </motion.div>
