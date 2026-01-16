@@ -248,7 +248,7 @@ const VirtualRealityMobility: React.FC = () => {
             </div>
 
             {/* Mobility Representation Image */}
-            <div className="glow-card mb-16 rounded-2xl bg-white/5 -mx-8">
+            <div className="glow-card mb-16 rounded-2xl bg-white/5">
               <div className="rounded-xl overflow-hidden">
                 <img 
                   src={getImagePath("A11yPicture.png")}
@@ -307,7 +307,7 @@ const VirtualRealityMobility: React.FC = () => {
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">Target Population</h2>
               <p className="text-white/80 leading-relaxed">
-                The study consisted of 4 pilot sessions with non-disabled users and 10 co-design sessions
+                The study consisted of 4 pilot sessions with non-disabled users and 12 co-design sessions
                 with lower body disabled users.
               </p>
             </div>
@@ -394,8 +394,8 @@ const VirtualRealityMobility: React.FC = () => {
               <h2 className="text-2xl font-bold mb-4">Challenges & Results</h2>
               <p className="text-white/80 leading-relaxed mb-4">
                 Through interviews and moderated testing with  motor-impaired users, we identified 
-                <span className="font-bold text-white"> 8 critical usability barriers</span> that directly shaped our research/product roadmap and VR interaction 
-                redesign. To manage the rich qualitative data from our research, I built a categorized 
+                <span className="font-bold text-white"> 50+ unique movement gestures</span> that are directly shaping our VR interaction 
+                redesign to create more accessible virtual experiences for people with mobility disabilities. To manage the rich qualitative data from our research, I built a categorized 
                 tagging system that reduced insight retrieval time by <span className="font-bold text-white">65%</span>, enabling faster 
                 cross-project knowledge sharing and decision-making.
               </p>
