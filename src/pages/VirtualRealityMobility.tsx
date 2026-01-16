@@ -263,13 +263,14 @@ const VirtualRealityMobility: React.FC = () => {
               <h2 className="text-2xl font-bold mb-4">Skills</h2>
               <div className="flex flex-wrap gap-3">
                 <span className="tech-badge-premium">In Depth Interviews</span>
+                <span className="tech-badge-premium">Inclusive Design</span>
                 <span className="tech-badge-premium">Storyboard</span>
                 <span className="tech-badge-premium">Virtual Reality</span>
                 <span className="tech-badge-premium">Unity Programming</span>
                 <span className="tech-badge-premium">Usability Testing</span>
                 <span className="tech-badge-premium">Qualitative Analysis</span>
                 <span className="tech-badge-premium">PowerPoint</span>
-                <span className="tech-badge-premium">Google Forms</span>
+                <span className="tech-badge-premium">Surveys</span>
               </div>
             </div>
 
@@ -372,7 +373,7 @@ const VirtualRealityMobility: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">Research Publication</h3>
                   <p className="text-white/80 leading-relaxed">
-                    Preparing research paper as <span className="font-bold text-white">first author</span> for submission to the Designing Interactive Systems Conference 2026, synthesizing our findings on identity representation and accessibility in VR environments.
+                    Preparing research paper as <span className="font-bold text-white">second author</span> for submission to the ASSESTS Conference 2026, synthesizing our findings on identity representation and accessibility in VR environments.
                   </p>
                 </div>
               </div>
@@ -396,7 +397,7 @@ const VirtualRealityMobility: React.FC = () => {
                 Through interviews and moderated testing with  motor-impaired users, we identified 
                 <span className="font-bold text-white"> 50+ unique movement gestures</span> that are directly shaping our VR interaction 
                 redesign to create more accessible virtual experiences for people with mobility disabilities. To manage the rich qualitative data from our research, I built a categorized 
-                tagging system that reduced insight retrieval time by <span className="font-bold text-white">65%</span>, enabling faster 
+                tagging system that reduced insight retrieval time by <span className="font-bold text-white">75%</span>, enabling faster 
                 cross-project knowledge sharing and decision-making.
               </p>
               <p className="text-white/80 leading-relaxed">
