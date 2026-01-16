@@ -203,20 +203,21 @@ const VirtualRealityMobility: React.FC = () => {
           >
             <h1 className="text-5xl md:text-6xl font-bold italic mb-4">Virtual Reality Mobility</h1>
             <span className="text-white/60 text-base md:text-lg font-light">
-              Carnegie Mellon Univeristy Human Computer Interaction Institute | May 2025 - Present
+              Carnegie Mellon University Human Computer Interaction Institute | May 2025 - Present
             </span>
           </motion.div>
 
-          {/* Team Members Image */}
-          <div className="glow-card p-8 mb-16 rounded-2xl border border-white/10 bg-white/5">
-            <div className="rounded-xl overflow-hidden border border-white/10">
-              <img 
-                src={getImagePath("A11yPicture.png")}
-                alt=" Participants Who Ranged In Different Mobility Disabilities"
-                className="w-full h-full object-cover"
-              />
+            {/* Mobility Representation Image */}
+            <div className="glow-card mb-16 rounded-2xl bg-white/5 -mx-8">
+              <div className="rounded-xl overflow-hidden">
+                <img 
+                  src={getImagePath("A11yPicture.png")}
+                  alt=" Participants Who Ranged In Different Mobility Disabilities"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
             </div>
-          </div>
+
 
           {/* TOP PICTURE GALLERY */}
           <section className="mb-16">

@@ -54,7 +54,7 @@ const SimAI: React.FC = () => {
           >
             <h1 className="text-5xl md:text-6xl font-bold italic mb-4">SIM-AI</h1>
             <span className="text-white/60 text-base md:text-lg font-light">
-              August 2024 - Present
+              August 2025 - Present
             </span>
           </motion.div>
 
@@ -82,12 +82,13 @@ const SimAI: React.FC = () => {
             <div className="flex flex-wrap gap-3">
               <span className="tech-badge-premium">Python</span>
               <span className="tech-badge-premium">React</span>
+              <span className="tech-badge-premium">TypeScript</span>
               <span className="tech-badge-premium">Figma</span>
-              <span className="tech-badge-premium">Llama3</span>
               <span className="tech-badge-premium">Gemini AI</span>
               <span className="tech-badge-premium">Unity</span>
               <span className="tech-badge-premium">AR/VR</span>
-              <span className="tech-badge-premium">Mural</span>
+              <span className="tech-badge-premium">Electron</span>
+
             </div>
           </div>
 
