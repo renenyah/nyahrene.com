@@ -83,7 +83,7 @@ const SimAI: React.FC = () => {
               <span className="tech-badge-premium">Python</span>
               <span className="tech-badge-premium">React</span>
               <span className="tech-badge-premium">TypeScript</span>
-              <span className="tech-badge-premium">Figma</span>
+              <span className="tech-badge-premium">User Flow</span>
               <span className="tech-badge-premium">Gemini AI</span>
               <span className="tech-badge-premium">Unity</span>
               <span className="tech-badge-premium">AR/VR</span>

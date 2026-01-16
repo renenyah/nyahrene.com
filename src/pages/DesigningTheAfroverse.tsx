@@ -128,6 +128,7 @@ const DesigningTheAfroVerse: React.FC = () => {
                 <span className="tech-badge-premium">Participatory Design</span>
                 <span className="tech-badge-premium">3D Printing</span>
                 <span className="tech-badge-premium">Usability Testing</span>
+                <span className="tech-badge-premium">Surveys</span>
                 <span className="tech-badge-premium">Laser Cutting</span>
                 <span className="tech-badge-premium">Embroidery</span>
                 <span className="tech-badge-premium">Sewing Machine</span>
@@ -436,7 +437,7 @@ const DesigningTheAfroVerse: React.FC = () => {
             <div className="glow-card p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4">My Contribution</h2>
               <p className="text-white/80 leading-relaxed mb-4">
-              This study is currently in progress and we are in our first session. My contributions so far include:
+              This study recently finished the Pilot Study. My contributions include:
               </p>
               
               <div className="space-y-4 text-white/80">

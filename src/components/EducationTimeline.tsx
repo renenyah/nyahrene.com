@@ -87,7 +87,7 @@ const EducationTimeline: React.FC = () => {
           <p className="text-white/60 text-sm">
             Check out my{' '}
             <a 
-              href="https://drive.google.com/file/d/18q9joEZgDkPCe48yxdbyTEjGkHSThwhQ/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1dm8NV4PBR2vSZ96Gf6TvNxD1fMoYvCQu/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-400 hover:text-pink-300 underline transition-colors"
